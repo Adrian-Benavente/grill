@@ -1,15 +1,34 @@
 .grid {
     display: grid;
 
+    @for $i from 1 through 12 {
+        .colspan-#{$i} {
+            grid-column: span #{$i};
+        }
+        .rowspan-#{$i} {
+            grid-row: span #{$i};
+        }
+        &.rows-#{$i} {
+            grid-template-rows: repeat($i, 1fr);
+        }
+    }
+
     @each $breakpoint, $value in $breakpoints {
         @include screen-size($breakpoint) {
             @for $i from 1 through 12 {
                 &.cols-#{$i}-#{$breakpoint} {
                     grid-template-columns: repeat($i, 1fr);
                 }
+                &.rows-#{$i}-#{$breakpoint} {
+                    grid-template-rows: repeat($i, 1fr);
+                }
 
-                .span-#{$i}-#{$breakpoint} {
+                .colspan-#{$i}-#{$breakpoint} {
                     grid-column: span #{$i};
+                }
+
+                .rowspan-#{$i}-#{$breakpoint} {
+                    grid-row: span #{$i};
                 }
             }
         }
