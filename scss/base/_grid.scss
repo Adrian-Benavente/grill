@@ -8,6 +8,9 @@
         .rowspan-#{$i} {
             grid-row: span #{$i};
         }
+        &.cols-#{$i} {
+            grid-template-columns: repeat($i, 1fr);
+        }
         &.rows-#{$i} {
             grid-template-rows: repeat($i, 1fr);
         }

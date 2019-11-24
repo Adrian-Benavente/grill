@@ -185,6 +185,9 @@ ul {
 .grid .rowspan-1 {
   grid-row: span 1;
 }
+.grid.cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
 .grid.rows-1 {
   grid-template-rows: repeat(1, 1fr);
 }
@@ -193,6 +196,9 @@ ul {
 }
 .grid .rowspan-2 {
   grid-row: span 2;
+}
+.grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 .grid.rows-2 {
   grid-template-rows: repeat(2, 1fr);
@@ -203,6 +209,9 @@ ul {
 .grid .rowspan-3 {
   grid-row: span 3;
 }
+.grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
 .grid.rows-3 {
   grid-template-rows: repeat(3, 1fr);
 }
@@ -211,6 +220,9 @@ ul {
 }
 .grid .rowspan-4 {
   grid-row: span 4;
+}
+.grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 .grid.rows-4 {
   grid-template-rows: repeat(4, 1fr);
@@ -221,6 +233,9 @@ ul {
 .grid .rowspan-5 {
   grid-row: span 5;
 }
+.grid.cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
 .grid.rows-5 {
   grid-template-rows: repeat(5, 1fr);
 }
@@ -229,6 +244,9 @@ ul {
 }
 .grid .rowspan-6 {
   grid-row: span 6;
+}
+.grid.cols-6 {
+  grid-template-columns: repeat(6, 1fr);
 }
 .grid.rows-6 {
   grid-template-rows: repeat(6, 1fr);
@@ -239,6 +257,9 @@ ul {
 .grid .rowspan-7 {
   grid-row: span 7;
 }
+.grid.cols-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
 .grid.rows-7 {
   grid-template-rows: repeat(7, 1fr);
 }
@@ -247,6 +268,9 @@ ul {
 }
 .grid .rowspan-8 {
   grid-row: span 8;
+}
+.grid.cols-8 {
+  grid-template-columns: repeat(8, 1fr);
 }
 .grid.rows-8 {
   grid-template-rows: repeat(8, 1fr);
@@ -257,6 +281,9 @@ ul {
 .grid .rowspan-9 {
   grid-row: span 9;
 }
+.grid.cols-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
 .grid.rows-9 {
   grid-template-rows: repeat(9, 1fr);
 }
@@ -265,6 +292,9 @@ ul {
 }
 .grid .rowspan-10 {
   grid-row: span 10;
+}
+.grid.cols-10 {
+  grid-template-columns: repeat(10, 1fr);
 }
 .grid.rows-10 {
   grid-template-rows: repeat(10, 1fr);
@@ -275,6 +305,9 @@ ul {
 .grid .rowspan-11 {
   grid-row: span 11;
 }
+.grid.cols-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
 .grid.rows-11 {
   grid-template-rows: repeat(11, 1fr);
 }
@@ -283,6 +316,9 @@ ul {
 }
 .grid .rowspan-12 {
   grid-row: span 12;
+}
+.grid.cols-12 {
+  grid-template-columns: repeat(12, 1fr);
 }
 .grid.rows-12 {
   grid-template-rows: repeat(12, 1fr);
