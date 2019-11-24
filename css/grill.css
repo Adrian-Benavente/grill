@@ -1,6 +1,8 @@
 @charset "UTF-8";
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -21950,6 +21952,22 @@ ul {
 
 .bg-light {
   background-color: #d1d3d4;
+}
+
+.burger button {
+  appearance: none;
+  background: none;
+  border: none;
+  color: #3d3d3d;
+  font-size: 2rem;
+  padding-right: 0;
+}
+.burger span {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  text-indent: -9000px;
+  width: 0;
 }
 
 .btn-primary {
