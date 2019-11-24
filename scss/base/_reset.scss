@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: font("light");
+    letter-spacing: to-rem("1px");
+}
+
+:focus {
+    outline: none;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

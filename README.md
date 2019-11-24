@@ -1,2 +1,3 @@
 # grill
-Grill is not another bootstrap, but a CSS framework based in Grid and written in Sass.
+
+Grill is not another bootstrap, but a CSS framework based in Grid and written in Sass, intented for quickly making lay outs.

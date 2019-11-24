@@ -1,0 +1,25 @@
+.block {
+    display: block;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+@each $breakpoint, $value in $breakpoints {
+    .shown-flex-#{$breakpoint},
+    .shown-block-#{$breakpoint} {
+        display: none;
+    }
+    @include screen-size($breakpoint) {
+        .hidden-#{$breakpoint} {
+            display: none;
+        }
+        .shown-flex-#{$breakpoint} {
+            display: flex;
+        }
+        .shown-block-#{$breakpoint} {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.grid {
+    display: grid;
+
+    @each $breakpoint, $value in $breakpoints {
+        @include screen-size($breakpoint) {
+            @for $i from 1 through 12 {
+                &.cols-#{$i}-#{$breakpoint} {
+                    grid-template-columns: repeat($i, 1fr);
+                }
+
+                .span-#{$i}-#{$breakpoint} {
+                    grid-column: span #{$i};
+                }
+            }
+        }
+    }
+
+    @each $unit in $units {
+        @for $i from 0 through 20 {
+            &.gap-#{$i}-#{$unit} {
+                gap: #{$i}#{$unit};
+            }
+        }
+    }
+}
+.grid-align-start {
+    align-items: start;
+}
+.grid-align-center {
+    align-items: center;
+}
+.grid-align-end {
+    align-items: end;
+}
+.grid-justify-start {
+    justify-items: start;
+}
+.grid-justify-center {
+    justify-items: center;
+}
+.grid-justify-end {
+    justify-items: end;
+}
+.grid-align-self-start {
+    align-self: start;
+}
+.grid-align-self-center {
+    align-self: center;
+}
+.grid-align-self-end {
+    align-self: end;
+}
+.grid-justify-self-start {
+    justify-self: start;
+}
+.grid-justify-self-center {
+    justify-self: center;
+}
+.grid-justify-self-end {
+    justify-self: end;
+}

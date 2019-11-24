@@ -1,0 +1,29 @@
+// Color palette
+$thunderbird: #cd2a21;
+$denim: #0b6daa;
+$yellow-sea: #f4ae00;
+$fun-green: #00923f;
+$mine-shaft: #3d3d3d;
+$graphite: #222222;
+$iron: #d1d3d4;
+
+$colors: (
+    primary: $denim,
+    success: $fun-green,
+    warning: $yellow-sea,
+    danger: $thunderbird,
+    dark: $mine-shaft,
+    darker: $graphite,
+    light: $iron
+);
+
+// Breakpoints
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 990px,
+    xl: 1200px
+);
+
+// Unit measures
+$units: px, rem, em;
