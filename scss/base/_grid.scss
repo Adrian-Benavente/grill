@@ -45,39 +45,51 @@
         }
     }
 }
-.grid-align-start {
+.grid-flow-column {
+    grid-auto-flow: column;
+}
+.grid-flow-row {
+    grid-auto-flow: row;
+}
+.align-items-stretch {
+    align-items: stretch;
+}
+.align-items-start {
     align-items: start;
 }
-.grid-align-center {
+.align-items-center {
     align-items: center;
 }
-.grid-align-end {
+.align-items-end {
     align-items: end;
 }
-.grid-justify-start {
+.justify-items-stretch {
+    justify-items: stretch;
+}
+.justify-items-start {
     justify-items: start;
 }
-.grid-justify-center {
+.justify-items-center {
     justify-items: center;
 }
-.grid-justify-end {
+.justify-items-end {
     justify-items: end;
 }
-.grid-align-self-start {
+.align-self-start {
     align-self: start;
 }
-.grid-align-self-center {
+.align-self-center {
     align-self: center;
 }
-.grid-align-self-end {
+.align-self-end {
     align-self: end;
 }
-.grid-justify-self-start {
+.justify-self-start {
     justify-self: start;
 }
-.grid-justify-self-center {
+.justify-self-center {
     justify-self: center;
 }
-.grid-justify-self-end {
+.justify-self-end {
     justify-self: end;
 }

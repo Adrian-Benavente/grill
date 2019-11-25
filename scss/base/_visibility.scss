@@ -2,24 +2,28 @@
     display: block;
 }
 
-.rounded {
-    border-radius: 8px;
+.flex {
+    display: flex;
+}
+
+.hidden {
+    display: none;
 }
 
 @each $breakpoint, $value in $breakpoints {
-    .shown-flex-#{$breakpoint},
-    .shown-block-#{$breakpoint} {
+    .shown-#{$breakpoint} {
         display: none;
     }
     @include screen-size($breakpoint) {
         .hidden-#{$breakpoint} {
             display: none;
         }
-        .shown-flex-#{$breakpoint} {
-            display: flex;
-        }
-        .shown-block-#{$breakpoint} {
+        .shown-#{$breakpoint} {
             display: block;
         }
     }
+}
+
+.rounded {
+    border-radius: 8px;
 }
