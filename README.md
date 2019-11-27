@@ -103,6 +103,12 @@ or simply
 
 - **pr-**: Padding right from 0 to 5
 
+#### Color classes
+
+- **text-***: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
+
+- **bg-***: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
+
 #### Units
 
 All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce it to the half.
