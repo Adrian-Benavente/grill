@@ -39,10 +39,11 @@
 
     @for $i from 1 through 5 {
         &.gap-#{$i}-half {
-            grid-gap: calc(#{$i}rem / 2);
+            grid-gap: calc(#{$i}rem / 2); // 'cause Safari yet only supports this one 
             gap: calc(#{$i}rem / 2);
         }
         &.gap-#{$i} {
+            grid-gap: #{$i}rem;
             gap: #{$i}rem;
         }
     }

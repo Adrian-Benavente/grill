@@ -764,6 +764,7 @@ ul {
   gap: calc(1rem / 2);
 }
 .grid.gap-1 {
+  grid-gap: 1rem;
   gap: 1rem;
 }
 .grid.gap-2-half {
@@ -771,6 +772,7 @@ ul {
   gap: calc(2rem / 2);
 }
 .grid.gap-2 {
+  grid-gap: 2rem;
   gap: 2rem;
 }
 .grid.gap-3-half {
@@ -778,6 +780,7 @@ ul {
   gap: calc(3rem / 2);
 }
 .grid.gap-3 {
+  grid-gap: 3rem;
   gap: 3rem;
 }
 .grid.gap-4-half {
@@ -785,6 +788,7 @@ ul {
   gap: calc(4rem / 2);
 }
 .grid.gap-4 {
+  grid-gap: 4rem;
   gap: 4rem;
 }
 .grid.gap-5-half {
@@ -792,6 +796,7 @@ ul {
   gap: calc(5rem / 2);
 }
 .grid.gap-5 {
+  grid-gap: 5rem;
   gap: 5rem;
 }
 
