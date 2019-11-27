@@ -39,6 +39,7 @@
 
     @for $i from 1 through 5 {
         &.gap-#{$i}-half {
+            grid-gap: calc(#{$i}rem / 2);
             gap: calc(#{$i}rem / 2);
         }
         &.gap-#{$i} {
@@ -47,20 +48,16 @@
     }
 }
 
-$flow-props: column, row;
-$ja-props: stretch, start, center, end;
-$ja-self-props: start, center, end;
-
-@each $prop in $flow-props {
+@each $prop in (column, row) {
   .grid-flow-#{$prop} { grid-auto-flow: $prop }
 }
 
-@each $prop in $ja-props {
+@each $prop in (stretch, start, center, end) {
   .align-items-#{$prop} { align-items: $prop }
   .justify-items-#{$prop} { justify-items: $prop }
 }
 
-@each $prop in $ja-self-props {
+@each $prop in (start, center, end) {
   .align-self-#{$prop} { align-items: $prop }
   .justify-self-#{$prop} { justify-items: $prop }
 }

@@ -760,30 +760,35 @@ ul {
   }
 }
 .grid.gap-1-half {
+  grid-gap: calc(1rem / 2);
   gap: calc(1rem / 2);
 }
 .grid.gap-1 {
   gap: 1rem;
 }
 .grid.gap-2-half {
+  grid-gap: calc(2rem / 2);
   gap: calc(2rem / 2);
 }
 .grid.gap-2 {
   gap: 2rem;
 }
 .grid.gap-3-half {
+  grid-gap: calc(3rem / 2);
   gap: calc(3rem / 2);
 }
 .grid.gap-3 {
   gap: 3rem;
 }
 .grid.gap-4-half {
+  grid-gap: calc(4rem / 2);
   gap: calc(4rem / 2);
 }
 .grid.gap-4 {
   gap: 4rem;
 }
 .grid.gap-5-half {
+  grid-gap: calc(5rem / 2);
   gap: calc(5rem / 2);
 }
 .grid.gap-5 {
@@ -802,28 +807,28 @@ ul {
   align-items: stretch;
 }
 
-.align-items-start {
-  align-items: start;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.align-items-end {
-  align-items: end;
-}
-
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.align-items-start {
+  align-items: start;
 }
 
 .justify-items-start {
   justify-items: start;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .justify-items-center {
   justify-items: center;
+}
+
+.align-items-end {
+  align-items: end;
 }
 
 .justify-items-end {
@@ -831,27 +836,27 @@ ul {
 }
 
 .align-self-start {
-  align-self: start;
-}
-
-.align-self-center {
-  align-self: center;
-}
-
-.align-self-end {
-  align-self: end;
+  align-items: start;
 }
 
 .justify-self-start {
-  justify-self: start;
+  justify-items: start;
+}
+
+.align-self-center {
+  align-items: center;
 }
 
 .justify-self-center {
-  justify-self: center;
+  justify-items: center;
+}
+
+.align-self-end {
+  align-items: end;
 }
 
 .justify-self-end {
-  justify-self: end;
+  justify-items: end;
 }
 
 .w-full {
