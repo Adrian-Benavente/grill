@@ -2,7 +2,7 @@
 
 ![Grill Logo](img/logo.png)
 
-Grill is not another bootstrap, but a **mobile first**, **CSS only** framework based on Grid and written in Sass, intended for quickly making lay outs.
+Grill is not another bootstrap, but a **mobile first**, **CSS only** library based on Grid and written in Sass, intended for quickly making lay outs.
 Many CSS frameworks out there do too much, my main goal is to keep it stripped-down to the minimum as much as possible. 
 
 ## Documentation
