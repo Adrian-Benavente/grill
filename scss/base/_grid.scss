@@ -46,51 +46,22 @@
         }
     }
 }
-.grid-flow-column {
-    grid-auto-flow: column;
+
+$flow-props: column, row;
+$ja-props: stretch, start, center, end;
+$ja-self-props: start, center, end;
+
+@each $prop in $flow-props {
+  .grid-flow-#{$prop} { grid-auto-flow: $prop }
 }
-.grid-flow-row {
-    grid-auto-flow: row;
+
+@each $prop in $ja-props {
+  .align-items-#{$prop} { align-items: $prop }
+  .justify-items-#{$prop} { justify-items: $prop }
 }
-.align-items-stretch {
-    align-items: stretch;
+
+@each $prop in $ja-self-props {
+  .align-self-#{$prop} { align-items: $prop }
+  .justify-self-#{$prop} { justify-items: $prop }
 }
-.align-items-start {
-    align-items: start;
-}
-.align-items-center {
-    align-items: center;
-}
-.align-items-end {
-    align-items: end;
-}
-.justify-items-stretch {
-    justify-items: stretch;
-}
-.justify-items-start {
-    justify-items: start;
-}
-.justify-items-center {
-    justify-items: center;
-}
-.justify-items-end {
-    justify-items: end;
-}
-.align-self-start {
-    align-self: start;
-}
-.align-self-center {
-    align-self: center;
-}
-.align-self-end {
-    align-self: end;
-}
-.justify-self-start {
-    justify-self: start;
-}
-.justify-self-center {
-    justify-self: center;
-}
-.justify-self-end {
-    justify-self: end;
-}
+
