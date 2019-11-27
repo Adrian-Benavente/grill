@@ -27,6 +27,30 @@ As I work on improving the documentation, you can take a look at the demo *index
 <div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
 ```
 
+- **gap-x**: Sets the size of the gaps in the horizontal axis.
+
+``` html
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-x-3"></div>
+```
+
+or
+
+``` html
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-x-3-half"></div>
+```
+
+- **gap-y**: Sets the size of the gaps in the vertical axis.
+
+``` html
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-y-3"></div>
+```
+
+or
+
+``` html
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-y-3-half"></div>
+```
+
 - **grid-flow**: `-column` or `-row`, though "row" is the default value, it specifies how elements within the grid are going to flow.
 
 ``` html
