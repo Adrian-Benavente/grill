@@ -140,3 +140,7 @@ Grill uses material icons, check [the official site](https://material.io/tools/i
 ``` html
 <span class="icon icon-museum"></span>
 ```
+
+##### Attention
+
+To reduce the bundle size, icons are not enabled by default. If you want them you have to go through scss/base/base-dir.scss and uncomment the line that has the icons import.
