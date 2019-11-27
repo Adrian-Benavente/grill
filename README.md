@@ -132,3 +132,11 @@ All units are in `rem` but as I mentioned before, you can add `-half` suffix to 
 - **dark**: #222222;
 - **darker**: #3d3d3d;
 - **light**: #d1d3d4;
+
+#### Icons
+
+Grill uses material icons, check [the official site](https://material.io/tools/icons/?style=baseline) for the glyph codes. All classes are prefixed with `icon-` followed by the icon code and must be accompanied by the `icon` class. For example:
+
+``` html
+<span class="icon icon-museum"></span>
+```
