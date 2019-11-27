@@ -58,6 +58,9 @@
 
 @each $breakpoint, $value in $breakpoints {
     @include screen-size($breakpoint) {
+        .m-0-#{$breakpoint} {
+            margin: 0;
+        }
         .my-0-#{$breakpoint} {
             margin-bottom: 0;
             margin-top: 0;
@@ -77,6 +80,9 @@
         }
         .mr-0-#{$breakpoint} {
             margin-right: 0;
+        }
+        .p-0-#{$breakpoint} {
+            padding: 0;
         }
         .py-0-#{$breakpoint} {
             margin-bottom: 0;
@@ -101,8 +107,11 @@
     }
 }
 
-@for $i from 0 through 5 {
+@for $i from 1 through 5 {
     // Implicit breakpoints (this will be applied for all resolutions)
+    .m-#{$i}-half {
+        margin: calc(#{$i}rem / 2);
+    }
     .mb-#{$i}-half {
         margin-bottom: calc(#{$i}rem / 2);
     }
@@ -123,8 +132,11 @@
         margin-bottom: calc(#{$i}rem / 2);
         margin-top: calc(#{$i}rem / 2);
     }
-    .pb-#{$i}-half {
-        padding-bottom: calc(#{$i}rem / 2);
+    .m-#{$i}-half {
+        margin: calc(#{$i}rem / 2);
+    }
+    .p-#{$i}-half {
+        padding: calc(#{$i}rem / 2);
     }
     .pt-#{$i}-half {
         padding-top: calc(#{$i}rem / 2);
@@ -198,8 +210,11 @@
             margin-bottom: auto;
             margin-top: auto;
         }
-        @for $i from 0 through 5 {
+        @for $i from 1 through 5 {
             // Explicit breakpoints
+            .m-#{$i}-half-#{$breakpoint} {
+                margin: calc(#{$i}rem / 2);
+            }
             .mb-#{$i}-half-#{$breakpoint} {
                 margin-bottom: calc(#{$i}rem / 2);
             }
@@ -219,6 +234,9 @@
             .my-#{$i}-half-#{$breakpoint} {
                 margin-bottom: calc(#{$i}rem / 2);
                 margin-top: calc(#{$i}rem / 2);
+            }
+            .p-#{$i}-half-#{$breakpoint} {
+                padding: calc(#{$i}rem / 2);
             }
             .pb-#{$i}-half-#{$breakpoint} {
                 padding-bottom: calc(#{$i}rem / 2);

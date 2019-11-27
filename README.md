@@ -11,7 +11,7 @@ As I work on improving the documentation, you can take a look at the demo *index
 
 ### Usage
 
-#### Classes
+#### Grid classes
 
 - **grid**: Tells an HTML element to become a grid container:
 
@@ -65,7 +65,54 @@ or simply
 
 - **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
 
-##### Units
+#### Spacing classes
+
+- **m-auto**: Auto margin (all axis)
+
+- **mx-auto**: Auto margin (horizontal axis)
+
+- **my-auto**: Auto margin (vertical axis)
+
+##### All the following accept breakpoint suffix
+
+- **m-**: Margin from 0 to 5 (all axis).
+
+- **mx-**: Margin from 0 to 5 (horizontal axis).
+
+- **my-**: Margin from 0 to 5 (vertical axis).
+
+- **mt-**: Margin top from 0 to 5
+
+- **mb-**: Margin bottom from 0 to 5
+
+- **ml-**: Margin left from 0 to 5
+
+- **mr-**: Margin right from 0 to 5
+
+- **p-**: Padding from 0 to 5 (all axis)
+
+- **px-**: Padding from 0 to 5 (horizontal axis)
+
+- **py-**: Padding from 0 to 5 (vertical axis)
+
+- **pt-**: Padding top from 0 to 5
+
+- **pb-**: Padding bottom from 0 to 5
+
+- **pl-**: Padding left from 0 to 5
+
+- **pr-**: Padding right from 0 to 5
+
+#### Units
 
 All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce it to the half.
 
+#### Breakpoints
+
+- **-sm**: Starting from 576px
+
+- **-md**: Starting from 768px
+
+- **-lg**: Starting from 990px
+
+- **-xl**: Starting from 1200px

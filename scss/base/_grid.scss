@@ -37,7 +37,7 @@
         }
     }
 
-    @for $i from 0 through 5 {
+    @for $i from 1 through 5 {
         &.gap-#{$i}-half {
             gap: calc(#{$i}rem / 2);
         }
