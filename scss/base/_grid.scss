@@ -37,11 +37,12 @@
         }
     }
 
-    @each $unit in $units {
-        @for $i from 0 through 20 {
-            &.gap-#{$i}-#{$unit} {
-                gap: #{$i}#{$unit};
-            }
+    @for $i from 0 through 5 {
+        &.gap-#{$i}-half {
+            gap: calc(#{$i}rem / 2);
+        }
+        &.gap-#{$i} {
+            gap: #{$i}rem;
         }
     }
 }

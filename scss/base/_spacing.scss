@@ -101,49 +101,87 @@
     }
 }
 
-@each $unit in $units {
-    @for $i from 0 through 20 {
-        // Implicit breakpoints (will apply in all resolutions)
-        .mb-#{$i}-#{$unit} {
-            margin-bottom: #{$i}#{$unit};
-        }
-        .mt-#{$i}-#{$unit} {
-            margin-top: #{$i}#{$unit};
-        }
-        .mr-#{$i}-#{$unit} {
-            margin-right: #{$i}#{$unit};
-        }
-        .ml-#{$i}-#{$unit} {
-            margin-left: #{$i}#{$unit};
-        }
-        .mx-#{$i}-#{$unit} {
-            margin-left: #{$i}#{$unit};
-            margin-right: #{$i}#{$unit};
-        }
-        .my-#{$i}-#{$unit} {
-            margin-bottom: #{$i}#{$unit};
-            margin-top: #{$i}#{$unit};
-        }
-        .pb-#{$i}-#{$unit} {
-            padding-bottom: #{$i}#{$unit};
-        }
-        .pt-#{$i}-#{$unit} {
-            padding-top: #{$i}#{$unit};
-        }
-        .pr-#{$i}-#{$unit} {
-            padding-right: #{$i}#{$unit};
-        }
-        .pl-#{$i}-#{$unit} {
-            padding-left: #{$i}#{$unit};
-        }
-        .px-#{$i}-#{$unit} {
-            padding-left: #{$i}#{$unit};
-            padding-right: #{$i}#{$unit};
-        }
-        .py-#{$i}-#{$unit} {
-            padding-bottom: #{$i}#{$unit};
-            padding-top: #{$i}#{$unit};
-        }
+@for $i from 0 through 5 {
+    // Implicit breakpoints (this will be applied for all resolutions)
+    .mb-#{$i}-half {
+        margin-bottom: calc(#{$i}rem / 2);
+    }
+    .mt-#{$i}-half {
+        margin-top: calc(#{$i}rem / 2);
+    }
+    .mr-#{$i}-half {
+        margin-right: calc(#{$i}rem / 2);
+    }
+    .ml-#{$i}-half {
+        margin-left: calc(#{$i}rem / 2);
+    }
+    .mx-#{$i}-half {
+        margin-left: calc(#{$i}rem / 2);
+        margin-right: calc(#{$i}rem / 2);
+    }
+    .my-#{$i}-half {
+        margin-bottom: calc(#{$i}rem / 2);
+        margin-top: calc(#{$i}rem / 2);
+    }
+    .pb-#{$i}-half {
+        padding-bottom: calc(#{$i}rem / 2);
+    }
+    .pt-#{$i}-half {
+        padding-top: calc(#{$i}rem / 2);
+    }
+    .pr-#{$i}-half {
+        padding-right: calc(#{$i}rem / 2);
+    }
+    .pl-#{$i}-half {
+        padding-left: calc(#{$i}rem / 2);
+    }
+    .px-#{$i}-half {
+        padding-left: calc(#{$i}rem / 2);
+        padding-right: calc(#{$i}rem / 2);
+    }
+    .py-#{$i}-half {
+        padding-bottom: calc(#{$i}rem / 2);
+        padding-top: calc(#{$i}rem / 2);
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}rem;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}rem;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}rem;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}rem;
+    }
+    .mx-#{$i} {
+        margin-left: #{$i}rem;
+        margin-right: #{$i}rem;
+    }
+    .my-#{$i} {
+        margin-bottom: #{$i}rem;
+        margin-top: #{$i}rem;
+    }
+    .pb-#{$i} {
+        padding-bottom: #{$i}rem;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}rem;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}rem;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}rem;
+    }
+    .px-#{$i} {
+        padding-left: #{$i}rem;
+        padding-right: #{$i}rem;
+    }
+    .py-#{$i} {
+        padding-bottom: #{$i}rem;
+        padding-top: #{$i}rem;
     }
 }
 
@@ -160,49 +198,87 @@
             margin-bottom: auto;
             margin-top: auto;
         }
-        @each $unit in $units {
-            @for $i from 0 through 20 {
-                // Explicit breakpoints
-                .mb-#{$i}-#{$unit}-#{$breakpoint} {
-                    margin-bottom: #{$i}#{$unit};
-                }
-                .mt-#{$i}-#{$unit}-#{$breakpoint} {
-                    margin-top: #{$i}#{$unit};
-                }
-                .mr-#{$i}-#{$unit}-#{$breakpoint} {
-                    margin-right: #{$i}#{$unit};
-                }
-                .ml-#{$i}-#{$unit}-#{$breakpoint} {
-                    margin-left: #{$i}#{$unit};
-                }
-                .mx-#{$i}-#{$unit}-#{$breakpoint} {
-                    margin-left: #{$i}#{$unit};
-                    margin-right: #{$i}#{$unit};
-                }
-                .my-#{$i}-#{$unit}-#{$breakpoint} {
-                    margin-bottom: #{$i}#{$unit};
-                    margin-top: #{$i}#{$unit};
-                }
-                .pb-#{$i}-#{$unit}-#{$breakpoint} {
-                    padding-bottom: #{$i}#{$unit};
-                }
-                .pt-#{$i}-#{$unit}-#{$breakpoint} {
-                    padding-top: #{$i}#{$unit};
-                }
-                .pr-#{$i}-#{$unit}-#{$breakpoint} {
-                    padding-right: #{$i}#{$unit};
-                }
-                .pl-#{$i}-#{$unit}-#{$breakpoint} {
-                    padding-left: #{$i}#{$unit};
-                }
-                .px-#{$i}-#{$unit}-#{$breakpoint} {
-                    padding-left: #{$i}#{$unit};
-                    padding-right: #{$i}#{$unit};
-                }
-                .py-#{$i}-#{$unit}-#{$breakpoint} {
-                    padding-bottom: #{$i}#{$unit};
-                    padding-top: #{$i}#{$unit};
-                }
+        @for $i from 0 through 5 {
+            // Explicit breakpoints
+            .mb-#{$i}-half-#{$breakpoint} {
+                margin-bottom: calc(#{$i}rem / 2);
+            }
+            .mt-#{$i}-half-#{$breakpoint} {
+                margin-top: calc(#{$i}rem / 2);
+            }
+            .mr-#{$i}-half-#{$breakpoint} {
+                margin-right: calc(#{$i}rem / 2);
+            }
+            .ml-#{$i}-half-#{$breakpoint} {
+                margin-left: calc(#{$i}rem / 2);
+            }
+            .mx-#{$i}-half-#{$breakpoint} {
+                margin-left: calc(#{$i}rem / 2);
+                margin-right: calc(#{$i}rem / 2);
+            }
+            .my-#{$i}-half-#{$breakpoint} {
+                margin-bottom: calc(#{$i}rem / 2);
+                margin-top: calc(#{$i}rem / 2);
+            }
+            .pb-#{$i}-half-#{$breakpoint} {
+                padding-bottom: calc(#{$i}rem / 2);
+            }
+            .pt-#{$i}-half-#{$breakpoint} {
+                padding-top: calc(#{$i}rem / 2);
+            }
+            .pr-#{$i}-half-#{$breakpoint} {
+                padding-right: calc(#{$i}rem / 2);
+            }
+            .pl-#{$i}-half-#{$breakpoint} {
+                padding-left: calc(#{$i}rem / 2);
+            }
+            .px-#{$i}-half-#{$breakpoint} {
+                padding-left: calc(#{$i}rem / 2);
+                padding-right: calc(#{$i}rem / 2);
+            }
+            .py-#{$i}-half-#{$breakpoint} {
+                padding-bottom: calc(#{$i}rem / 2);
+                padding-top: calc(#{$i}rem / 2);
+            }
+            .mb-#{$i}-#{$breakpoint} {
+                margin-bottom: #{$i}rem;
+            }
+            .mt-#{$i}-#{$breakpoint} {
+                margin-top: #{$i}rem;
+            }
+            .mr-#{$i}-#{$breakpoint} {
+                margin-right: #{$i}rem;
+            }
+            .ml-#{$i}-#{$breakpoint} {
+                margin-left: #{$i}rem;
+            }
+            .mx-#{$i}-#{$breakpoint} {
+                margin-left: #{$i}rem;
+                margin-right: #{$i}rem;
+            }
+            .my-#{$i}-#{$breakpoint} {
+                margin-bottom: #{$i}rem;
+                margin-top: #{$i}rem;
+            }
+            .pb-#{$i}-#{$breakpoint} {
+                padding-bottom: #{$i}rem;
+            }
+            .pt-#{$i}-#{$breakpoint} {
+                padding-top: #{$i}rem;
+            }
+            .pr-#{$i}-#{$breakpoint} {
+                padding-right: #{$i}rem;
+            }
+            .pl-#{$i}-#{$breakpoint} {
+                padding-left: #{$i}rem;
+            }
+            .px-#{$i}-#{$breakpoint} {
+                padding-left: #{$i}rem;
+                padding-right: #{$i}rem;
+            }
+            .py-#{$i}-#{$breakpoint} {
+                padding-bottom: #{$i}rem;
+                padding-top: #{$i}rem;
             }
         }
     }
