@@ -105,9 +105,9 @@ or simply
 
 #### Color classes
 
-- **text-***: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
+- **text-**: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
 
-- **bg-***: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
+- **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
 
 #### Units
 
