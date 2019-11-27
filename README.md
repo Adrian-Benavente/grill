@@ -109,10 +109,6 @@ or simply
 
 - **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
 
-#### Units
-
-All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce it to the half.
-
 #### Breakpoints
 
 - **-sm**: Starting from 576px
@@ -122,3 +118,17 @@ All units are in `rem` but as I mentioned before, you can add `-half` suffix to 
 - **-lg**: Starting from 990px
 
 - **-xl**: Starting from 1200px
+
+#### Units
+
+All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce it to the half.
+
+#### Colors
+
+- **primary**: #0b6daa;
+- **success**: #00923f;
+- **warning**: #f4ae00;
+- **danger**: #cd2a21;
+- **dark**: #222222;
+- **darker**: #3d3d3d;
+- **light**: #d1d3d4;
