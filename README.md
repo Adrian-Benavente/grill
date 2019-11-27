@@ -145,7 +145,7 @@ or simply
 
 #### Units
 
-All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce it to the half.
+All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
 
 #### Colors
 
