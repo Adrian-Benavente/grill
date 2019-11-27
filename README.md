@@ -18,19 +18,19 @@ As I work on improving the documentation, you can take a look at the demo *index
 - **cols**: (From 1 to 12), defines how many columns the grid will have. You can also add the breakpoint from which it will start having that number of columns. For example:
 
 ``` html
-<div class="grid cols-sm-2 cols-4-md cols-6-lg cols-8-xl"></div>
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl"></div>
 ```
 
 - **gap**: The grid gutter, in `rem` units, from 1 to 5. Psst! You can add the `-half` suffix to use half a rem as your measure:
 
 ``` html
-<div class="grid cols-sm-2 cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
 ```
 
 - **grid-flow**: `-column` or `-row`, though "row" is the default value, it specifies how elements within the grid are going to flow.
 
 ``` html
-<div class="grid grid-flow-column cols-sm-2 cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
+<div class="grid grid-flow-column cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
 ```
 
 - **colspan**: used to tell a row how many columns must span. It also accepts explicit breakpoints.
