@@ -169,4 +169,4 @@ Grill uses material icons, check [the official site](https://material.io/tools/i
 
 To reduce the bundle size, icons are not enabled by default. If you want them you have to go through scss/base/base-dir.scss, uncomment the line that has the icons import and compile the Sass again. Don't forget to include the 'icons' folder in your project.
 
-**Grill saved your day? I'd be thankful if you [buy me a coffee](https://paypal.me/adrianbenavente). If you can't, your star motivates me**
+**Grill saved your day? I'd be thankful if you [buy me a coffee](https://paypal.me/adrianbenavente). If you can't, a star motivates me**
