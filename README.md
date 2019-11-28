@@ -7,7 +7,7 @@ Many CSS frameworks out there do too much, my main goal is to keep it stripped-d
 
 ## Documentation
 
-As I work on improving the documentation, you can take a look at the demo *index.html* file. Drag & drop it in your favorite browser.
+As I work on the documentation, you can take a look at the demo *index.html* file. Drag & drop it in your favorite browser.
 
 ## Table of Contents
 
