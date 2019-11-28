@@ -11,7 +11,7 @@ As I work on improving the documentation, you can take a look at the demo *index
 
 ### Usage
 
-Because of the way grid works, you don't need two levels of html containers to tell 'Hey, I'm a row' and then another one to say 'Hey, I also have columns!'. In Grill, a grid container declares the number of columns in its very parent element. Every direct child will behave as a column but you can still decide how many columns it will span. Nevertheless, since grids can be nested, a direct child of a grid container can also be a grid, having the `grid` class name on it and thus include its own column declaration.
+Because of the way grid works, you don't need two levels of html containers to tell 'Hey, I'm a row' and then another one to say 'Hey, I also have columns!'. In Grill, a grid container declares the number of columns in its very parent element. Every direct child will behave as a column but you can still decide how many columns it will span. Nevertheless, since grids can be nested, any child of a grid container can also be a grid, having the `grid` class name on it and thus include its own column declaration.
 
 #### Grid classes
 
