@@ -12,9 +12,10 @@ As I work on improving the documentation, you can take a look at the demo *index
 ## Table of Contents
 
 - [Usage](#usage)
-  - [Grid Classes](#grid-classes)
-  - [Spacing classes](#spacing-classes)
-  - [Color classes](#color-classes)
+- [Grid Classes](#grid-classes)
+- [Spacing classes](#spacing-classes)
+- [Breakpoints](#breakpoints)
+- [Color classes](#color-classes)
 - [Units](#units)
 - [Colors](#colors)
 - [Icons](#icons)
@@ -23,7 +24,7 @@ As I work on improving the documentation, you can take a look at the demo *index
 
 Because of the way grid works, you don't need two levels of html containers to tell 'Hey, I'm a row' and then another one to say 'Hey, I also have columns!'. In Grill, a grid container declares the number of columns in its very parent element. Every direct child will behave as a column but you can still decide how many columns it will span. Nevertheless, since grids can be nested, any child of a grid container can also be a grid, having the `grid` class name on it and thus including its own columns declaration. I suggest you to read [this very comprehensive article](https://css-tricks.com/snippets/css/complete-guide-grid/) to better understand the great power and benefits of CSS Grid.
 
-#### Grid classes
+### Grid classes
 
 - **grid**: Tells an HTML element to become a grid container:
 
@@ -107,7 +108,7 @@ or simply
 
 - **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
 
-#### Spacing classes
+### Spacing classes
 
 - **m-auto**: Auto margin (all axis)
 
@@ -115,7 +116,7 @@ or simply
 
 - **my-auto**: Auto margin (vertical axis)
 
-##### All the following accept breakpoint suffix
+#### All the following accept breakpoint suffix
 
 - **m-**: Margin from 0 to 5 (all axis).
 
@@ -145,13 +146,13 @@ or simply
 
 - **pr-**: Padding right from 0 to 5
 
-#### Color classes
+### Color classes
 
 - **text-**: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
 
 - **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
 
-#### Breakpoints
+### Breakpoints
 
 - **-sm**: Starting from 576px
 
@@ -161,11 +162,11 @@ or simply
 
 - **-xl**: Starting from 1200px
 
-#### Units
+### Units
 
 All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
 
-#### Colors
+### Colors
 
 - **primary**: #0b6daa;
 - **success**: #00923f;
@@ -175,7 +176,7 @@ All units are in `rem` but as I mentioned before, you can add `-half` suffix to 
 - **darker**: #3d3d3d;
 - **light**: #d1d3d4;
 
-#### Icons
+### Icons
 
 Grill uses material icons, check [the official site](https://material.io/tools/icons/?style=baseline) for the glyph codes. All classes are prefixed with `icon-` followed by the icon code and must be accompanied by the `icon` class. For example:
 
@@ -183,7 +184,7 @@ Grill uses material icons, check [the official site](https://material.io/tools/i
 <span class="icon icon-museum"></span>
 ```
 
-##### Attention
+#### Attention
 
 To reduce the bundle size, icons are not enabled by default. If you still want them you'll have to go through scss/base/base-dir.scss, uncomment the line that has the icons import and compile the Sass again. Don't forget to include the 'icons' folder in your project.
 
