@@ -65,7 +65,7 @@ or
 <div class="grid grid-flow-column cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
 ```
 
-- **colspan**: used to tell a row how many columns must span. It also accepts explicit breakpoints.
+- **colspan**: tells a row how many columns must span. It also accepts explicit breakpoints.
 
 ``` html
 <div class="colspan-4-md colspan-6-lg"></div>
@@ -77,7 +77,7 @@ or simply
 <div class="colspan-6"></div>
 ```
 
-- **rowspan**: used to tell a column how many rows must span. It also accepts explicit breakpoints.
+- **rowspan**: tells a column how many rows must span. It also accepts explicit breakpoints.
 
 ``` html
 <div class="rowspan-4-md rowspan-6-lg"></div>
