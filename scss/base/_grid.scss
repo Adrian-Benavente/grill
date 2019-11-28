@@ -40,15 +40,19 @@
     @for $i from 1 through 5 {
         &.gap-x-#{$i} {
             grid-row-gap: #{$i}rem;
+            row-gap: #{$i}rem;
         }
         &.gap-x-#{$i}-half {
             grid-row-gap: calc(#{$i}rem / 2);
+            row-gap: calc(#{$i}rem / 2);
         }
         &.gap-y-#{$i} {
             grid-column-gap: #{$i}rem;
+            column-gap: #{$i}rem;
         }
         &.gap-y-#{$i}-half {
             grid-column-gap: calc(#{$i}rem / 2);
+            column-gap: calc(#{$i}rem / 2);
         }
         &.gap-#{$i}-half {
             grid-gap: calc(#{$i}rem / 2); // 'cause Safari yet only supports this one 
