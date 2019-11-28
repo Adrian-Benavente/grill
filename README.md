@@ -26,7 +26,7 @@ Because of the way grid works, you don't need two levels of html containers to t
 - **rows**: (From 1 to 12), defines how many rows the grid will have (though I don't encourage limiting this, I prefer setting the number of columns and leave the rows generate automatically). You can also add the breakpoint from which it will start having that number of rows. For example:
 
 ``` html
-<div class="grid rows-2-sm rows-4-md rows-6-lg rows-8-xl"></div>
+<div class="grid rows-8-sm rows-6-md rows-4-lg rows-2-xl"></div>
 ```
 
 - **gap**: The grid gutter, in `rem` units, from 1 to 5. Psst! You can add the `-half` suffix to use half a rem as your measure:
