@@ -75,7 +75,7 @@
 }
 
 @each $prop in (start, center, end) {
-  .align-self-#{$prop} { align-items: $prop }
-  .justify-self-#{$prop} { justify-items: $prop }
+  .align-self-#{$prop} { align-self: $prop }
+  .justify-self-#{$prop} { justify-self: $prop }
 }
 

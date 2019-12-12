@@ -920,27 +920,27 @@ ul {
 }
 
 .align-self-start {
-  align-items: start;
+  align-self: start;
 }
 
 .justify-self-start {
-  justify-items: start;
+  justify-self: start;
 }
 
 .align-self-center {
-  align-items: center;
+  align-self: center;
 }
 
 .justify-self-center {
-  justify-items: center;
+  justify-self: center;
 }
 
 .align-self-end {
-  align-items: end;
+  align-self: end;
 }
 
 .justify-self-end {
-  justify-items: end;
+  justify-self: end;
 }
 
 .w-full {
