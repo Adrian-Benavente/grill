@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Material Icons";
-    src: url("../icons/material.woff") format("woff");
+    src: url("../assets/fonts/material.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -1645,9 +1645,6 @@
 .icon-local_gas_station:before {
     content: "\eb1d";
 }
-.icon-local_grocery_storeshopping_cart:before {
-    content: "\eb1e";
-}
 .icon-local_hospital:before {
     content: "\eb1f";
 }
@@ -2445,6 +2442,9 @@
 }
 .icon-shopping_basket:before {
     content: "\ec28";
+}
+.icon-shopping_cart:before {
+    content: "\eb1e";
 }
 .icon-speaker_notes:before {
     content: "\ec29";
