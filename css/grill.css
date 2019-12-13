@@ -759,20 +759,20 @@ ul {
   }
 }
 .grid.gap-x-1 {
-  grid-row-gap: 1rem;
-  row-gap: 1rem;
-}
-.grid.gap-x-1-half {
-  grid-row-gap: calc(1rem / 2);
-  row-gap: calc(1rem / 2);
-}
-.grid.gap-y-1 {
   grid-column-gap: 1rem;
   column-gap: 1rem;
 }
-.grid.gap-y-1-half {
+.grid.gap-x-1-half {
   grid-column-gap: calc(1rem / 2);
   column-gap: calc(1rem / 2);
+}
+.grid.gap-y-1 {
+  grid-row-gap: 1rem;
+  row-gap: 1rem;
+}
+.grid.gap-y-1-half {
+  grid-row-gap: calc(1rem / 2);
+  row-gap: calc(1rem / 2);
 }
 .grid.gap-1-half {
   grid-gap: calc(1rem / 2);
@@ -783,20 +783,20 @@ ul {
   gap: 1rem;
 }
 .grid.gap-x-2 {
-  grid-row-gap: 2rem;
-  row-gap: 2rem;
-}
-.grid.gap-x-2-half {
-  grid-row-gap: calc(2rem / 2);
-  row-gap: calc(2rem / 2);
-}
-.grid.gap-y-2 {
   grid-column-gap: 2rem;
   column-gap: 2rem;
 }
-.grid.gap-y-2-half {
+.grid.gap-x-2-half {
   grid-column-gap: calc(2rem / 2);
   column-gap: calc(2rem / 2);
+}
+.grid.gap-y-2 {
+  grid-row-gap: 2rem;
+  row-gap: 2rem;
+}
+.grid.gap-y-2-half {
+  grid-row-gap: calc(2rem / 2);
+  row-gap: calc(2rem / 2);
 }
 .grid.gap-2-half {
   grid-gap: calc(2rem / 2);
@@ -807,20 +807,20 @@ ul {
   gap: 2rem;
 }
 .grid.gap-x-3 {
-  grid-row-gap: 3rem;
-  row-gap: 3rem;
-}
-.grid.gap-x-3-half {
-  grid-row-gap: calc(3rem / 2);
-  row-gap: calc(3rem / 2);
-}
-.grid.gap-y-3 {
   grid-column-gap: 3rem;
   column-gap: 3rem;
 }
-.grid.gap-y-3-half {
+.grid.gap-x-3-half {
   grid-column-gap: calc(3rem / 2);
   column-gap: calc(3rem / 2);
+}
+.grid.gap-y-3 {
+  grid-row-gap: 3rem;
+  row-gap: 3rem;
+}
+.grid.gap-y-3-half {
+  grid-row-gap: calc(3rem / 2);
+  row-gap: calc(3rem / 2);
 }
 .grid.gap-3-half {
   grid-gap: calc(3rem / 2);
@@ -831,20 +831,20 @@ ul {
   gap: 3rem;
 }
 .grid.gap-x-4 {
-  grid-row-gap: 4rem;
-  row-gap: 4rem;
-}
-.grid.gap-x-4-half {
-  grid-row-gap: calc(4rem / 2);
-  row-gap: calc(4rem / 2);
-}
-.grid.gap-y-4 {
   grid-column-gap: 4rem;
   column-gap: 4rem;
 }
-.grid.gap-y-4-half {
+.grid.gap-x-4-half {
   grid-column-gap: calc(4rem / 2);
   column-gap: calc(4rem / 2);
+}
+.grid.gap-y-4 {
+  grid-row-gap: 4rem;
+  row-gap: 4rem;
+}
+.grid.gap-y-4-half {
+  grid-row-gap: calc(4rem / 2);
+  row-gap: calc(4rem / 2);
 }
 .grid.gap-4-half {
   grid-gap: calc(4rem / 2);
@@ -855,20 +855,20 @@ ul {
   gap: 4rem;
 }
 .grid.gap-x-5 {
-  grid-row-gap: 5rem;
-  row-gap: 5rem;
-}
-.grid.gap-x-5-half {
-  grid-row-gap: calc(5rem / 2);
-  row-gap: calc(5rem / 2);
-}
-.grid.gap-y-5 {
   grid-column-gap: 5rem;
   column-gap: 5rem;
 }
-.grid.gap-y-5-half {
+.grid.gap-x-5-half {
   grid-column-gap: calc(5rem / 2);
   column-gap: calc(5rem / 2);
+}
+.grid.gap-y-5 {
+  grid-row-gap: 5rem;
+  row-gap: 5rem;
+}
+.grid.gap-y-5-half {
+  grid-row-gap: calc(5rem / 2);
+  row-gap: calc(5rem / 2);
 }
 .grid.gap-5-half {
   grid-gap: calc(5rem / 2);
