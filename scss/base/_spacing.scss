@@ -258,6 +258,9 @@
                 padding-bottom: calc(#{$i}rem / 2);
                 padding-top: calc(#{$i}rem / 2);
             }
+            .m-#{$i}-#{$breakpoint} {
+                margin-inline-start: #{$i}rem;
+            }
             .mb-#{$i}-#{$breakpoint} {
                 margin-bottom: #{$i}rem;
             }
@@ -277,6 +280,9 @@
             .my-#{$i}-#{$breakpoint} {
                 margin-bottom: #{$i}rem;
                 margin-top: #{$i}rem;
+            }
+            .p-#{$i}-#{$breakpoint} {
+                padding: #{$i}rem;
             }
             .pb-#{$i}-#{$breakpoint} {
                 padding-bottom: #{$i}rem;
