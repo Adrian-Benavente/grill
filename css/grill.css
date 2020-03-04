@@ -1,32 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  font-family: font("light");
-  letter-spacing: 0.0625rem;
-}
-
-:focus {
-  outline: none;
-}
-
-a {
-  color: initial;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
 .grid {
   display: grid;
 }
@@ -1173,14 +1144,6 @@ ul {
 
 .grid-flow-row {
   grid-auto-flow: row;
-}
-
-.align-items-stretch {
-  align-items: stretch;
-}
-
-.justify-items-stretch {
-  justify-items: stretch;
 }
 
 .align-items-start {
@@ -4759,60 +4722,4 @@ ul {
   overflow: hidden;
   text-indent: -9000px;
   width: 0;
-}
-
-.btn-primary {
-  background: #0b6daa;
-  border-color: #0b6daa;
-}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #0d7cc2;
-}
-
-.btn-success {
-  background: #00923f;
-  border-color: #00923f;
-}
-.btn-success:hover, .btn-success:focus, .btn-success:active {
-  background: #00ac4a;
-}
-
-.btn-warning {
-  background: #f4ae00;
-  border-color: #f4ae00;
-}
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
-  background: #ffba0f;
-}
-
-.btn-danger {
-  background: #cd2a21;
-  border-color: #cd2a21;
-}
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #dd342b;
-}
-
-.btn-dark {
-  background: #3d3d3d;
-  border-color: #3d3d3d;
-}
-.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
-  background: #4a4a4a;
-}
-
-.btn-darker {
-  background: #222222;
-  border-color: #222222;
-}
-.btn-darker:hover, .btn-darker:focus, .btn-darker:active {
-  background: #2f2f2f;
-}
-
-.btn-light {
-  background: #d1d3d4;
-  border-color: #d1d3d4;
-}
-.btn-light:hover, .btn-light:focus, .btn-light:active {
-  background: #dee0e0;
 }
