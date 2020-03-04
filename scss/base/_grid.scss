@@ -76,7 +76,7 @@
   .grid-flow-#{$prop} { grid-auto-flow: $prop }
 }
 
-@each $prop in (stretch, start, center, end) {
+@each $prop in (start, center, end) {
   .align-items-#{$prop} { align-items: $prop }
   .justify-items-#{$prop} { justify-items: $prop }
 }
