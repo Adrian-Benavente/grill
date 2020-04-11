@@ -100,11 +100,13 @@ or simply
 <div class="rowspan-6"></div>
 ```
 
-- **alig-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned in the vertical axis.
+- **align-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned
+ in the vertical axis.
 
 - **justify-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned in the horizontal axis.
 
-- **alig-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the vertical axis.
+- **align-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the
+ vertical axis.
 
 - **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
 
@@ -154,13 +156,15 @@ or simply
 
 ### Breakpoints
 
-- **-sm**: Starting from 576px
+- **-sm**: Starting from 600px
 
-- **-md**: Starting from 768px
+- **-md**: Starting from 960px
 
-- **-lg**: Starting from 990px
+- **-lg**: Starting from 1280px
 
-- **-xl**: Starting from 1200px
+- **-xl**: Starting from 1440px
+
+- **xxl**: Starting from 1920px
 
 ### Units
 
