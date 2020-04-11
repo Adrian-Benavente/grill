@@ -26,13 +26,6 @@
                     grid-template-rows: repeat($i, 1fr);
                 }
 
-                &.grid-auto-columns {
-                    grid-auto-columns: repeat($i, 1fr);
-                }
-                &.grid-auto-rows {
-                    grid-auto-rows: repeat($i, 1fr);
-                }
-
                 .colspan-#{$i}-#{$breakpoint} {
                     grid-column: span #{$i};
                 }
