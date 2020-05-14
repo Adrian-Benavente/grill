@@ -11,6 +11,7 @@ Many CSS frameworks out there do too much, my main goal is to keep it stripped d
 - [Grid Classes](#grid-classes)
 - [Spacing classes](#spacing-classes)
 - [Breakpoints](#breakpoints)
+- [Accessibility](#accessibility)
 - [Units](#units)
 - [Color classes](#color-classes)
 - [Colors](#colors)
@@ -156,13 +157,14 @@ or simply
 
 - **-xxl**: Starting from 1920px
 
-### Units
-
-All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
 
 ### Accessibility
 
 - **sr-only**: Using this class the element will be hidden to the GUI user but still accessible to screen readers.
+
+### Units
+
+All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
 
 ### Color classes
 
