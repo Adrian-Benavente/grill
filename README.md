@@ -146,6 +146,8 @@ or simply
 
 ### Color classes
 
+This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
+
 - **text-**: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
 
 - **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
