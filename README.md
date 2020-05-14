@@ -18,11 +18,11 @@ Many CSS frameworks out there do too much, my main goal is to keep it stripped d
 - [Icons](#icons)
 - [Implicit grid](#implicit-grid)
 
-### Usage
+## Usage
 
 Because of the way grid works, you don't need two levels of html containers to tell 'Hey, I'm a row' and then another one to say 'Hey, I also have columns!'. In Grill, you declare the number of columns directly on the top-level container. Every direct child will behaves as a column but you can still decide how many columns it will span. Nevertheless, since grids can be nested, any child of a grid container can also be a grid, having the `grid` class name on it and thus including its own columns declaration. I suggest you to read [this very comprehensive article](https://css-tricks.com/snippets/css/complete-guide-grid/) to better understand the great power and benefits of CSS Grid.
 
-### Grid classes
+## Grid classes
 
 - **grid**: Tells an HTML element to become a grid container:
 
@@ -109,7 +109,7 @@ or simply
 - **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
 
 
-### Spacing classes
+## Spacing classes
 
 - **m-auto**: Auto margin (all axis)
 
@@ -117,7 +117,7 @@ or simply
 
 - **my-auto**: Auto margin (vertical axis)
 
-#### All the following accept breakpoint suffix
+### All the following accept breakpoint suffix
 
 - **m-**: Margin from 0 to 5 (all axis).
 
@@ -147,7 +147,7 @@ or simply
 
 - **pr-**: Padding right from 0 to 5
 
-### Breakpoints
+## Breakpoints
 
 - **-sm**: Starting from 600px
 
@@ -160,15 +160,15 @@ or simply
 - **-xxl**: Starting from 1920px
 
 
-### Accessibility
+## Accessibility
 
 - **sr-only**: Using this class the element will be hidden to the GUI user but still accessible to screen readers.
 
-### Units
+## Units
 
 All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
 
-### Color classes
+## Color classes
 
 This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
 
@@ -177,7 +177,7 @@ This is optional and does not come in the default bundle. You have to uncomment 
 - **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
 
 
-### Colors
+## Colors
 
 This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
 
@@ -189,7 +189,7 @@ This is optional and does not come in the default bundle. You have to uncomment 
 - **darker**: #3d3d3d;
 - **light**: #d1d3d4;
 
-### Icons
+## Icons
 
 Grill uses material icons, check [the official site](https://material.io/tools/icons/?style=baseline) for the glyph codes. All classes are prefixed with `icon-` followed by the icon code and must be accompanied by the `icon` class. For example:
 
@@ -197,7 +197,7 @@ Grill uses material icons, check [the official site](https://material.io/tools/i
 <span class="icon icon-museum"></span>
 ```
 
-#### Attention
+### Attention
 
 To reduce the bundle size, icons are not enabled by default. If you still want them you'll have to go to scss/base/base-dir.scss, uncomment the line that has the icons import and compile again. Don't forget to include the `icons` folder in your project.
 
