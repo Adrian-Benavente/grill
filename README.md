@@ -160,7 +160,7 @@ or simply
 
 - **-xl**: Starting from 1440px
 
-- **xxl**: Starting from 1920px
+- **-xxl**: Starting from 1920px
 
 ### Units
 
