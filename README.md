@@ -144,14 +144,6 @@ or simply
 
 - **pr-**: Padding right from 0 to 5
 
-### Color classes
-
-This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
-
-- **text-**: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
-
-- **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
-
 ### Breakpoints
 
 - **-sm**: Starting from 600px
@@ -167,6 +159,15 @@ This is optional and does not come in the default bundle. You have to uncomment 
 ### Units
 
 All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
+
+### Color classes
+
+This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
+
+- **text-**: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
+
+- **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
+
 
 ### Colors
 
