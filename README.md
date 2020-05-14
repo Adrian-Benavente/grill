@@ -16,6 +16,7 @@ Many CSS frameworks out there do too much, my main goal is to keep it stripped d
 - [Color classes](#color-classes)
 - [Colors](#colors)
 - [Icons](#icons)
+- [Implicit grid](#implicit-grid)
 
 ### Usage
 
@@ -107,11 +108,6 @@ or simply
 
 - **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
 
-#### Implicit grid
-
-- If you don't use any breakpoint at all, for example `<div class="grid cols-2"></div>`, it'll assume 2 columns for all screen sizes.
-- If you include a class without an explicit breakpoint and another which does have it, the first one will apply for any screen size below the one indicated by the first breakpoint it encounters. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution.
-- Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1 column/row until the first given breakpoint. For example `<div class="grid cols-6-lg"></div>` will have 1 column until 1280px and then it'll have 6 columns.
 
 ### Spacing classes
 
@@ -204,5 +200,11 @@ Grill uses material icons, check [the official site](https://material.io/tools/i
 #### Attention
 
 To reduce the bundle size, icons are not enabled by default. If you still want them you'll have to go to scss/base/base-dir.scss, uncomment the line that has the icons import and compile again. Don't forget to include the `icons` folder in your project.
+
+### Implicit grid
+
+- If you don't use any breakpoint at all, for example `<div class="grid cols-2"></div>`, it'll assume 2 columns for all screen sizes.
+- If you include a class without an explicit breakpoint and another which does have it, the first one will apply for any screen size below the one indicated by the first breakpoint it encounters. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution.
+- Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1 column/row until the first given breakpoint. For example `<div class="grid cols-6-lg"></div>` will have 1 column until 1280px and then it'll have 6 columns.
 
 **Grill saved your day? I'd be thankful if you [buy me a coffee](https://paypal.me/adrianbenavente). If you can't, a star would motivate me. I'm also in [Patreon](https://patreon.com/fenavente)**
