@@ -38,10 +38,10 @@ Because of the way grid works, you don't need two levels of html containers to t
 <div class="grid rows-8-sm rows-6-md rows-4-lg rows-2-xl"></div>
 ```
 
-- **gap**: The grid gutter, in `rem` units, from 1 to 5. Psst! You can add the `-half` suffix to indicate a half of the given number (it'll only work with odd numbers for obvious reasons):
+- **gap**: The grid gutter, in `rem` units, from 1 to 5. Psst! You can add the `-half` suffix to indicate a half of the given number (it'll only work with odd numbers for obvious reasons). E.g.: `gap-3-half`, `gap-x-3-half` or `gap-y-3-half`:
 
 ``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3"></div>
 ```
 
 - **gap-x**: Sets the size of the gaps in the horizontal axis.
@@ -50,22 +50,10 @@ Because of the way grid works, you don't need two levels of html containers to t
 <div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-x-3"></div>
 ```
 
-or
-
-``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-x-3-half"></div>
-```
-
 - **gap-y**: Sets the size of the gaps in the vertical axis.
 
 ``` html
 <div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-y-3"></div>
-```
-
-or
-
-``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-y-3-half"></div>
 ```
 
 - **grid-flow**: `-column` or `-row`, though "row" is the default value, it specifies how elements within the grid are going to flow.
