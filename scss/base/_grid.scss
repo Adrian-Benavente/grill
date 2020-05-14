@@ -42,26 +42,51 @@
             grid-column-gap: #{$i}rem;
             column-gap: #{$i}rem;
         }
-        &.gap-x-#{$i}-half {
-            grid-column-gap: calc(#{$i}rem / 2);
-            column-gap: calc(#{$i}rem / 2);
-        }
         &.gap-y-#{$i} {
             grid-row-gap: #{$i}rem;
             row-gap: #{$i}rem;
-        }
-        &.gap-y-#{$i}-half {
-            grid-row-gap: calc(#{$i}rem / 2);
-            row-gap: calc(#{$i}rem / 2);
-        }
-        &.gap-#{$i}-half {
-            grid-gap: calc(#{$i}rem / 2); // 'cause Safari yet only supports this one 
-            gap: calc(#{$i}rem / 2);
         }
         &.gap-#{$i} {
             grid-gap: #{$i}rem;
             gap: #{$i}rem;
         }
+    }
+
+    &.gap-x-1-half {
+        grid-column-gap: 0.5rem;
+        column-gap: 0.5rem;
+    }
+    &.gap-x-3-half {
+        grid-column-gap: 1.5rem;
+        column-gap: 1.5rem;
+    }
+    &.gap-x-5-half {
+        grid-column-gap: 2.5rem;
+        column-gap: 2.5rem;
+    }
+    &.gap-y-1-half {
+        grid-row-gap: 0.5rem;
+        row-gap: 0.5rem;
+    }
+    &.gap-y-3-half {
+        grid-row-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+    &.gap-y-5-half {
+        grid-row-gap: 2.5rem;
+        row-gap: 2.5rem;
+    }
+    &.gap-1-half {
+        grid-gap: 0.5rem; // 'cause Safari still only supports this one
+        gap: 0.5rem;
+    }
+    &.gap-3-half {
+        grid-gap: 1.5rem; // 'cause Safari still only supports this one
+        gap: 1.5rem;
+    }
+    &.gap-5-half {
+        grid-gap: 2.5rem; // 'cause Safari still only supports this one
+        gap: 2.5rem;
     }
 }
 
