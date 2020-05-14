@@ -160,6 +160,10 @@ or simply
 
 All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
 
+### Accessibility
+
+- **sr-only**: Using this class the element will be hidden to the GUI user but still accessible to screen readers.
+
 ### Color classes
 
 This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
