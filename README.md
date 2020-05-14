@@ -151,7 +151,7 @@ or, for all screen sizes:
 ## Implicit grid
 
 - If you don't use any breakpoint at all, for example `<div class="grid cols-2"></div>`, it'll assume 2 columns for all screen sizes.
-- If you include a class without an explicit breakpoint and another which does have it, the first one will apply for any screen size below the one indicated by the first breakpoint it encounters. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution.
+- If you include a class without a breakpoint and another with it, the first one will apply for any screen size below the one indicated by the other. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution. If there were more breakpoints present it'll continue as normal, meaning that `<div class="grid cols-2 cols-6-lg cols-8-xl"></div>` should result in 2 columns until 1280px, 6 columns until 1440px, and then 8 columns.
 - Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1 column/row until the first given breakpoint. For example `<div class="grid cols-6-lg"></div>` will have 1 column until 1280px and then it'll have 6 columns.
 
 ## Accessibility
