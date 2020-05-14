@@ -1,8 +1,8 @@
 // @import "reset"; if you want to apply a styles reset, uncomment this line
+@import "accessibility";
+@import "breakpoints";
 @import "grid";
 @import "constraints";
 @import "spacing";
-@import "text";
 // @import "icons"; // if you want to use the icons in your bundle, just uncomment this line and compile the Sass ;)
-@import "backgrounds";
 @import "visibility";
