@@ -62,7 +62,7 @@ Because of the way grid works, you don't need two levels of html containers to t
 <div class="grid grid-flow-column cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
 ```
 
-- **colspan**: tells a row how many columns must span. It also accepts explicit breakpoints.
+- **colspan**: tells a row how many columns it must span. It also accepts explicit breakpoints.
 
 ``` html
 <div class="colspan-4-md colspan-6-lg"></div>
@@ -74,7 +74,7 @@ or, for all screen sizes:
 <div class="colspan-6"></div>
 ```
 
-- **rowspan**: tells a column how many rows must span. It also accepts explicit breakpoints.
+- **rowspan**: tells a column how many rows it must span. It also accepts explicit breakpoints.
 
 ``` html
 <div class="rowspan-4-md rowspan-6-lg"></div>
