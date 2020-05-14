@@ -207,4 +207,4 @@ To reduce the bundle size, icons are not enabled by default. If you still want t
 - If you include a class without an explicit breakpoint and another which does have it, the first one will apply for any screen size below the one indicated by the first breakpoint it encounters. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution.
 - Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1 column/row until the first given breakpoint. For example `<div class="grid cols-6-lg"></div>` will have 1 column until 1280px and then it'll have 6 columns.
 
-**Have Grill saved your day? I'd be thankful if you [buy me a coffee](https://paypal.me/adrianbenavente). If you can't, a star would motivate me. I'm also in [Patreon](https://patreon.com/fenavente)**
+**Have Grill saved your day? I'd be thankful if you [buy me a coffee](https://paypal.me/adrianbenavente). If you can't, a star would motivate me. I'm also at [Patreon](https://patreon.com/fenavente)**
