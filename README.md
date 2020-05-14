@@ -11,8 +11,8 @@ Many CSS frameworks out there do too much, my main goal is to keep it stripped-d
 - [Grid Classes](#grid-classes)
 - [Spacing classes](#spacing-classes)
 - [Breakpoints](#breakpoints)
-- [Color classes](#color-classes)
 - [Units](#units)
+- [Color classes](#color-classes)
 - [Colors](#colors)
 - [Icons](#icons)
 
