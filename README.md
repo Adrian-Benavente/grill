@@ -37,12 +37,6 @@ Because of the way grid works, you don't need two levels of html containers to t
 <div class="grid rows-8-sm rows-6-md rows-4-lg rows-2-xl"></div>
 ```
 
-#### Implicit grid
-
-- If you don't use any breakpoint at all, for example `<div class="grid cols-2"></div>`, it'll assume 2 columns for all screen sizes.
-- If you include a class without an explicit breakpoint and another which does have it, the first one will apply for any screen size below the one indicated by the first breakpoint it encounters. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution.
-- Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1 column/row until the first given breakpoint. For example `<div class="grid cols-6-lg"></div>` will have 1 column until 1280px and then it'll have 6 columns.
-
 - **gap**: The grid gutter, in `rem` units, from 1 to 5. Psst! You can add the `-half` suffix to indicate a half of the given number (it'll only work with odd numbers for obvious reasons):
 
 ``` html
@@ -112,6 +106,12 @@ or simply
  vertical axis.
 
 - **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
+
+#### Implicit grid
+
+- If you don't use any breakpoint at all, for example `<div class="grid cols-2"></div>`, it'll assume 2 columns for all screen sizes.
+- If you include a class without an explicit breakpoint and another which does have it, the first one will apply for any screen size below the one indicated by the first breakpoint it encounters. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution.
+- Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1 column/row until the first given breakpoint. For example `<div class="grid cols-6-lg"></div>` will have 1 column until 1280px and then it'll have 6 columns.
 
 ### Spacing classes
 
