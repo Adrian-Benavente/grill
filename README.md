@@ -24,7 +24,7 @@ Because of the way grid works, you don't need two levels of html containers, one
 
 ## Grid classes
 
-- **grid**: Tells an HTML element to become a grid container:
+- **grid**: Tells an HTML element to become a grid container.
 
 - **cols**: (From 1 to 12), defines how many columns the grid will have. You can also add the breakpoint from which it will start having that number of columns. For example:
 
