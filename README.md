@@ -56,7 +56,7 @@ Because of the way grid works, you don't need two levels of html containers, one
 <div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-y-3"></div>
 ```
 
-- **grid-flow**: `-column`, `-row` or `dense`, though "row" is the default value, it specifies the way elements within the grid are going to flow.
+- **grid-flow**: `-column`, `-row` or `-dense`, though "row" is the default value, it specifies the way elements within the grid are going to flow.
 
 ``` html
 <div class="grid grid-flow-column cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
