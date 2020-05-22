@@ -990,6 +990,10 @@
   grid-auto-flow: row;
 }
 
+.grid-flow-dense {
+  grid-auto-flow: dense;
+}
+
 .align-items-start {
   align-items: start;
 }

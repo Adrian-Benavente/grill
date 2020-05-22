@@ -41,11 +41,11 @@
         @if $i % 2 != 0 {
             &.gap-x-#{$i}-half {
                 grid-column-gap: calc(#{$i}rem / 2);
-                column-gap:  calc(#{$i}rem / 2);
+                column-gap: calc(#{$i}rem / 2);
             }
             &.gap-y-#{$i}-half {
                 grid-row-gap: calc(#{$i}rem / 2);
-                row-gap:  calc(#{$i}rem / 2);
+                row-gap: calc(#{$i}rem / 2);
             }
             &.gap-#{$i}-half {
                 grid-gap: calc(#{$i}rem / 2); // 'cause Safari still only supports this one
@@ -67,17 +67,27 @@
     }
 }
 
-@each $prop in (column, row) {
-  .grid-flow-#{$prop} { grid-auto-flow: $prop }
+@each $prop in (column, row, dense) {
+    .grid-flow-#{$prop} {
+        grid-auto-flow: $prop
+    }
 }
 
 @each $prop in (start, center, end) {
-  .align-items-#{$prop} { align-items: $prop }
-  .justify-items-#{$prop} { justify-items: $prop }
+    .align-items-#{$prop} {
+        align-items: $prop
+    }
+    .justify-items-#{$prop} {
+        justify-items: $prop
+    }
 }
 
 @each $prop in (start, center, end) {
-  .align-self-#{$prop} { align-self: $prop }
-  .justify-self-#{$prop} { justify-self: $prop }
+    .align-self-#{$prop} {
+        align-self: $prop
+    }
+    .justify-self-#{$prop} {
+        justify-self: $prop
+    }
 }
 
