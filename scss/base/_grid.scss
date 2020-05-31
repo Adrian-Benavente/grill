@@ -1,7 +1,19 @@
 .grid {
     display: grid;
 
-    @for $i from 1 through 12 {
+    @for $i from 2 through 12 {
+        &.cols-#{$i} {
+            grid-template-columns: repeat($i, 1fr);
+        }
+        &.rows-#{$i} {
+            grid-template-rows: repeat($i, 1fr);
+        }
+        &.auto-cols-#{$i} {
+            grid-auto-columns: #{$i}fr;
+        }
+        &.auto-rows-#{$i} {
+            grid-auto-rows: #{$i}fr;
+        }
         .colspan-#{$i} {
             grid-column: span #{$i};
         }
@@ -25,7 +37,12 @@
                 &.rows-#{$i}-#{$breakpoint} {
                     grid-template-rows: repeat($i, 1fr);
                 }
-
+                &.auto-cols-#{$i}-#{$breakpoint} {
+                    grid-auto-columns: #{$i}fr;
+                }
+                &.auto-rows-#{$i}-#{$breakpoint} {
+                    grid-auto-rows: #{$i}fr;
+                }
                 .colspan-#{$i}-#{$breakpoint} {
                     grid-column: span #{$i};
                 }
@@ -67,11 +84,11 @@
     }
 }
 
-@each $prop in (column, row, dense) {
-    .grid-flow-#{$prop} {
-        grid-auto-flow: $prop
+    @each $prop in (column, row, dense) {
+        &.auto-flow-#{$prop} {
+            grid-auto-flow: $prop;
+        }
     }
-}
 
 @each $prop in (start, center, end) {
     .align-items-#{$prop} {
