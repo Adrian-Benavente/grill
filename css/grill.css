@@ -3267,6 +3267,18 @@
     padding-top: 5rem;
   }
 }
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .block {
   display: block;
 }
