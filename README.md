@@ -9,14 +9,10 @@ Many CSS frameworks out there do too much, my main goal is to keep it stripped d
 
 - [Usage](#usage)
 - [Grid Classes](#grid-classes)
-- [Spacing classes](#spacing-classes)
+- [Helpers](#helpers)
 - [Breakpoints](#breakpoints)
 - [Implicit grid](#implicit-grid)
-- [Accessibility](#accessibility)
-- [Units](#units)
-- [Color classes](#color-classes)
-- [Colors](#colors)
-- [Icons](#icons)
+- [Donate](#donation)
 
 ## Usage
 
@@ -24,43 +20,56 @@ Because of the way grid works, you don't need two levels of html containers, one
 
 ## Grid classes
 
+### Container
+
 - **grid**: Tells an HTML element to become a grid container.
 
-- **cols**: (From 1 to 12), defines how many columns the grid will have. You can also add the breakpoint from which it will start having that number of columns. For example:
+- **cols**: From 2 to 12 (1 is the default), defines how many columns the grid will have. You
+ can also add the breakpoint from which it will start having that number of columns. For example:
 
 ``` html
 <div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl"></div>
 ```
 
-- **rows**: (From 1 to 12), defines how many rows the grid will have (though I don't encourage limiting this, I prefer setting the number of columns and leave the rows generate automatically). You can also add the breakpoint from which it will start having that number of rows. For example:
+- **rows**: From 2 to 12 (1 is the default), defines how many rows the grid will have (though I don't encourage limiting
+ this, I prefer setting the number of columns and leave the rows generate automatically). 
+ You can also add the breakpoint from which it will start having that number of rows. For example:
 
 ``` html
 <div class="grid rows-8-sm rows-6-md rows-4-lg rows-2-xl"></div>
 ```
 
-- **gap**: The grid gutter, in `rem` units, from 1 to 5. Psst! You can add the `-half` suffix to indicate a half of the given number (it'll only work with odd numbers for obvious reasons). E.g.: `gap-3-half`, `gap-x-3-half` or `gap-y-3-half`.
-
+- **gap**: The grid gutter, in `rem` units, from 1 to 5. If only one value is present, it'll apply to both axis (column
+ and rows). You can use different values for columns and rows gaps in which case the first one will belong to the column
+ gap, and the second one to row gap. 
+ 
 ``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3"></div>
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1"></div>
 ```
-
-- **gap-x**: Sets the size of the gaps in the horizontal axis.
-
-``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-x-3"></div>
-```
-
-- **gap-y**: Sets the size of the gaps in the vertical axis.
-
-``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-y-3"></div>
-```
+_Notice that you cannot use the same value for both axis in this mode `gap-3-3`, that would be redundant, instead you
+ must use `gap-3`._
 
 - **grid-flow**: `-column`, `-row` (though this is the default value) or `-dense`, it specifies the way elements within the grid are going to flow.
 
 ``` html
-<div class="grid grid-flow-column cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-half"></div>
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1 grid-flow-column"></div>
 ```
+
+- **auto-cols**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take columns that are added
+ implicitly. For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns).
+
+``` html
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1 grid-flow-row auto-cols-3"></div>
+```
+
+- **auto-rows**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take rows
+ that are added implicitly. For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows).
+
+``` html
+<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1 grid-flow-column auto-rows-3"></div>
+```
+
+### Children
 
 - **colspan**: used in any direct child of the grid container, indicates how many columns it should span. It also accepts breakpoints.
 
@@ -96,8 +105,9 @@ or, for all screen sizes:
 
 - **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
 
+## Helpers
 
-## Spacing classes
+### Spacing
 
 - **m-auto**: Auto margin (all axis)
 
@@ -105,35 +115,46 @@ or, for all screen sizes:
 
 - **my-auto**: Auto margin (vertical axis)
 
-### All the following accept breakpoint suffix
+All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in *rem* units.
 
-- **m-**: Margin from 0 to 5 (all axis).
+- **m-**: Margin from 1 to 5 (all axis).
 
-- **mx-**: Margin from 0 to 5 (horizontal axis).
+- **mx-**: Margin from 1 to 5 (horizontal axis).
 
-- **my-**: Margin from 0 to 5 (vertical axis).
+- **my-**: Margin from 1 to 5 (vertical axis).
 
-- **mt-**: Margin top from 0 to 5
+- **mt-**: Margin top from 1 to 5
 
-- **mb-**: Margin bottom from 0 to 5
+- **mb-**: Margin bottom from 1 to 5
 
-- **ml-**: Margin left from 0 to 5
+- **ml-**: Margin left from 1 to 5
 
-- **mr-**: Margin right from 0 to 5
+- **mr-**: Margin right from 1 to 5
 
-- **p-**: Padding from 0 to 5 (all axis)
+- **p-**: Padding from 1 to 5 (all axis)
 
-- **px-**: Padding from 0 to 5 (horizontal axis)
+- **px-**: Padding from 1 to 5 (horizontal axis)
 
-- **py-**: Padding from 0 to 5 (vertical axis)
+- **py-**: Padding from 1 to 5 (vertical axis)
 
-- **pt-**: Padding top from 0 to 5
+- **pt-**: Padding top from 1 to 5
 
-- **pb-**: Padding bottom from 0 to 5
+- **pb-**: Padding bottom from 1 to 5
 
-- **pl-**: Padding left from 0 to 5
+- **pl-**: Padding left from 1 to 5
 
-- **pr-**: Padding right from 0 to 5
+- **pr-**: Padding right from 1 to 5
+
+### Text alignment
+
+**text-start**: Aligns text to the start in your native reading orientation.
+**text-center**: Aligns text to the center.
+**text-end**: Aligns text to the start in your native reading orientation.
+
+### Accessibility
+
+- **sr-only**: Using this class the element will be hidden to the GUI user but still accessible to screen readers and
+ other assistive technologies.
 
 ## Breakpoints
 
@@ -147,52 +168,22 @@ or, for all screen sizes:
 
 - **-xxl**: Starting from 1920px
 
-
 ## Implicit grid
 
-- If you don't use any breakpoint at all, for example `<div class="grid cols-2"></div>`, it'll assume 2 columns for all screen sizes.
-- If you include a class without a breakpoint and another with it, the first one will apply for any screen size below the one indicated by the other. For example `<div class="grid cols-2 cols-6-lg"></div>`, the grid will have 2 columns until 1280px and 6 columns starting from that resolution. If there were more breakpoints present it'll continue as normal, meaning that `<div class="grid cols-2 cols-6-lg cols-8-xl"></div>` should result in 2 columns until 1280px, 6 columns from that point, and 8 columns from 1440px.
-- Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1 column/row until the first given breakpoint. For example `<div class="grid cols-6-lg"></div>` will have 1 column until 1280px and then it'll have 6 columns.
+1. If you don't specify any breakpoint at all, it'll assume the given number for all screen sizes, for example `cols-2
+` means 2 columns all the time.
+2. If you include a class without a breakpoint and another which does have one, the first one will apply for any screen
+ size below the other. For example in `cols-2 cols-6-lg`, the grid will have 2 columns until
+  1280px and then 6 columns starting from that resolution. If there were more breakpoints present it'll continue as
+   normal, meaning that `cols-2 cols-6-lg cols-8-xl` should result in 2 columns until 1280px, 6 columns from that
+    point, and 8 columns from 1440px and beyond.
+3. Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1
+ column/row until the first given breakpoint. For example, using `cols-6-lg` alone will result in 1 column
+  until 1280px and then it will start to have 6 columns. If you want to define a number of columns/rows below *sm
+  *, you should do it this way: `cols-2 cols-3-sm`.
 
-## Accessibility
+## Donation
 
-- **sr-only**: Using this class the element will be hidden to the GUI user but still accessible to screen readers.
-
-## Units
-
-All units are in `rem` but as I mentioned before, you can add `-half` suffix to reduce them to half.
-
-## Color classes
-
-This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
-
-- **text-**: Text color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
-
-- **bg-**: Background color (`primary`, `success`, `warning`, `danger`, `dark`, `darker` or `light`)
-
-
-## Colors
-
-This is optional and does not come in the default bundle. You have to uncomment the theme import in the `main.scss` file and compile manually.
-
-- **primary**: #0b6daa;
-- **success**: #00923f;
-- **warning**: #f4ae00;
-- **danger**: #cd2a21;
-- **dark**: #222222;
-- **darker**: #3d3d3d;
-- **light**: #d1d3d4;
-
-## Icons
-
-Grill uses material icons, check [the official site](https://material.io/tools/icons/?style=baseline) for the glyph codes. All classes are prefixed with `icon-` followed by the icon code and must be accompanied by the `icon` class. For example:
-
-``` html
-<span class="icon icon-museum"></span>
-```
-
-### Attention
-
-To reduce the bundle size, icons are not enabled by default. If you still want them you'll have to go to scss/base/base-dir.scss, uncomment the line that has the icons import and compile again. Don't forget to include the `icons` folder in your project.
-
-**Have Grill saved your day? I'd be thankful if you [buy me a coffee](https://paypal.me/adrianbenavente). If you can't, a star would motivate me. I'm also at [Patreon](https://patreon.com/fenavente)**
+Did Grill save your day? I'd be thankful if you [buy me a coffee](https://www.buymeacoffee.com/fena). If you can
+'t, a star would motivate me. You also find me in [Patreon](https://patreon.com/fenavente) and [Paypal](https://paypal.me/adrianbenavente). In case you
+'re in Argentina and use **Mercado Pago**, you can buy me a coffee via [Cafecito](https://cafecito.app/fena).
