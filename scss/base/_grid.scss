@@ -85,5 +85,10 @@
             justify-self: $prop;
         }
     }
+
+    &.bordered > * {
+        border: 1px dashed black;
+    }
 }
+
 
