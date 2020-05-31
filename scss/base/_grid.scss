@@ -68,21 +68,22 @@
         }
     }
 
-@each $prop in (start, center, end) {
-    .align-items-#{$prop} {
-        align-items: $prop
+    @each $prop in (start, center, end) {
+        &.align-items-#{$prop} {
+            align-items: $prop;
+        }
+        &.justify-items-#{$prop} {
+            justify-items: $prop;
+        }
     }
-    .justify-items-#{$prop} {
-        justify-items: $prop
-    }
-}
 
-@each $prop in (start, center, end) {
-    .align-self-#{$prop} {
-        align-self: $prop
-    }
-    .justify-self-#{$prop} {
-        justify-self: $prop
+    @each $prop in (start, center, end) {
+        .align-self-#{$prop} {
+            align-self: $prop;
+        }
+        .justify-self-#{$prop} {
+            justify-self: $prop;
+        }
     }
 }
 
