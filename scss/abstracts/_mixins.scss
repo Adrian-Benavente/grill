@@ -1,3 +1,5 @@
+/// @param {string} $size - one of the following: "sm", "md", "lg", "xl" or "xxl"
+
 @mixin screen-size($size) {
     @each $breakpoint, $value in $breakpoints {
         @if $size == $breakpoint {
