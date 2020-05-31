@@ -24,7 +24,7 @@
 
     @each $breakpoint, $value in $breakpoints {
         @include screen-size($breakpoint) {
-            @for $i from 1 through 12 {
+            @for $i from 2 through 12 {
                 &.cols-#{$i}-#{$breakpoint} {
                     grid-template-columns: repeat($i, 1fr);
                 }
@@ -40,7 +40,6 @@
                 .colspan-#{$i}-#{$breakpoint} {
                     grid-column: span #{$i};
                 }
-
                 .rowspan-#{$i}-#{$breakpoint} {
                     grid-row: span #{$i};
                 }
