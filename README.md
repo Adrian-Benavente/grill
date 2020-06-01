@@ -39,17 +39,18 @@ Because of the way grid works, you don't need two levels of html containers, one
 <div class="grid rows-8-sm rows-6-md rows-4-lg rows-2-xl"></div>
 ```
 
-- **gap**: The grid gutter, in `rem` units, from 1 to 5. If only one value is present, it'll apply to both axis (column
- and rows). You can use different values for columns and rows gaps in which case the first one will belong to the column
- gap, and the second one to row gap. 
+- **gap**: The grid gutter, in `rem` units, from 1 to 5. If only one value is present, it'll apply to both sides (column
+ and rows). You can use different values for both columns and rows in which case the first one will belong to
+ column gap, and the second one to row gap. 
  
 ``` html
 <div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1"></div>
 ```
-_Notice that you cannot use the same value for both axis in this mode `gap-3-3`, that would be redundant, instead you
- must use `gap-3`._
+_Notice that you cannot use the same value for both axis in this mode, ie: `gap-3-3`, that would be redundant, instead
+ you must use `gap-3`._
 
-- **grid-flow**: `-column`, `-row` (though this is the default value) or `-dense`, it specifies the way elements within the grid are going to flow.
+- **grid-flow**: `-column`, `-row` (default) or `-dense`, it specifies the direction elements are going to flow along
+ the grid.
 
 ``` html
 <div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1 grid-flow-column"></div>
@@ -71,25 +72,27 @@ _Notice that you cannot use the same value for both axis in this mode `gap-3-3`,
 
 ### Children
 
-- **colspan**: used in any direct child of the grid container, indicates how many columns it should span. It also accepts breakpoints.
+- **colspan**: used in any direct child of the grid container, indicates how many columns it shall span. It also accepts
+ breakpoints.
 
 ``` html
 <div class="colspan-4-md colspan-6-lg"></div>
 ```
 
-or, for all screen sizes:
+or simply:
 
 ``` html
 <div class="colspan-6"></div>
 ```
 
-- **rowspan**: used in any direct child of the grid container, indicates how many rows it should span. It also accepts breakpoints.
+- **rowspan**: used in any direct child of the grid container, indicates how many rows it shall span. It also accepts
+ breakpoints.
 
 ``` html
 <div class="rowspan-4-md rowspan-6-lg"></div>
 ```
 
-or, for all screen sizes:
+or simply:
 
 ``` html
 <div class="rowspan-6"></div>
@@ -147,9 +150,9 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 
 ### Text alignment
 
-**text-start**: Aligns text to the start in your native reading orientation.
-**text-center**: Aligns text to the center.
-**text-end**: Aligns text to the start in your native reading orientation.
+- **text-start**: Aligns text to the start in your native reading orientation.
+- **text-center**: Aligns text to the center.
+- **text-end**: Aligns text to the start in your native reading orientation.
 
 ### Accessibility
 
@@ -173,13 +176,13 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 1. If you don't specify any breakpoint at all, it'll assume the given number for all screen sizes, for example `cols-2
 ` means 2 columns all the time.
 2. If you include a class without a breakpoint and another which does have one, the first one will apply for any screen
- size below the other. For example in `cols-2 cols-6-lg`, the grid will have 2 columns until
+ size below the other. For example if `cols-2 cols-6-lg`, the grid will have 2 columns until
   1280px and then 6 columns starting from that resolution. If there were more breakpoints present it'll continue as
    normal, meaning that `cols-2 cols-6-lg cols-8-xl` should result in 2 columns until 1280px, 6 columns from that
     point, and 8 columns from 1440px and beyond.
 3. Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1
  column/row until the first given breakpoint. For example, using `cols-6-lg` alone will result in 1 column
-  until 1280px and then it will start to have 6 columns. If you want to define a number of columns/rows below *sm
+  until 1280px and then it will start having 6 columns. If you want to define a number of columns/rows below *sm
   *, you should do it this way: `cols-2 cols-3-sm`.
 
 ## Donation
