@@ -16,7 +16,18 @@ Many CSS frameworks out there do too much, my main goal is to keep it stripped d
 
 ## Usage
 
-Because of the way grid works, you don't need two levels of html containers, one to declare a row and then another to declare the columns. In Grill, you declare the number of columns directly on the top-level container. Nevertheless, since grids can be nested, any child of a grid container can also be a grid, having the `grid` class name on it and thus including its own columns declaration. I suggest you to read [this very comprehensive article](https://css-tricks.com/snippets/css/complete-guide-grid/) to better understand the great power and benefits of CSS Grid.
+Because of the way grid works, you don't need two levels of html containers, one to declare a row and then another to
+ declare the columns. In Grill, you declare the number of columns directly on the top-level container. Nevertheless
+ , since grids can be nested, any child of a grid container can also be a grid, having the `grid` class name on it
+  and thus including its own columns declaration. 
+  
+### Disclaimer
+
+CSS Grid is a huge, very powerful module. Due to the limitations of relying exclusively on classes, **Grill** isn't able
+ to take advantage of Grid's full potential, but provides the necessary set of rules for the majority of the
+  tasks you're going to face when it comes to making layouts. I suggest you to read [this very
+ comprehensive article](https://css-tricks.com/snippets/css/complete-guide-grid/) to better understand the true power
+  and benefits of CSS Grid.
 
 ## Grid classes
 
