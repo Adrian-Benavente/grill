@@ -44,7 +44,7 @@ Because of the way grid works, you don't need two levels of html containers, one
  column gap, and the second one to row gap. 
  
 ``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1"></div>
+<div class="grid cols-2-sm cols-4-md gap-3-1"></div>
 ```
 _Notice that you cannot use the same value for both axis in this mode, ie: `gap-3-3`, that would be redundant, instead
  you must use `gap-3`._
@@ -53,21 +53,21 @@ _Notice that you cannot use the same value for both axis in this mode, ie: `gap-
  the grid.
 
 ``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1 grid-flow-column"></div>
+<div class="grid cols-2-sm cols-4-md grid-flow-column"></div>
 ```
 
 - **auto-cols**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take columns that are added
  implicitly. For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns).
 
 ``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1 grid-flow-row auto-cols-3"></div>
+<div class="grid cols-2-sm grid-flow-row auto-cols-3"></div>
 ```
 
 - **auto-rows**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take rows
  that are added implicitly. For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows).
 
 ``` html
-<div class="grid cols-2-sm cols-4-md cols-6-lg cols-8-xl gap-3-1 grid-flow-column auto-rows-3"></div>
+<div class="grid cols-2-sm grid-flow-column auto-rows-3"></div>
 ```
 
 ### Children
