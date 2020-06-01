@@ -47,7 +47,7 @@ Because of the way grid works, you don't need two levels of html containers, one
 <div class="grid cols-2-sm cols-4-md gap-3-1"></div>
 ```
 _Notice that you cannot use the same value for both axis in this mode, ie: `gap-3-3`, that would be redundant, instead
- you must use `gap-3`._
+ you must just use `gap-3`._
 
 - **grid-flow**: `-column`, `-row` (default) or `-dense`, it specifies the direction elements are going to flow along
  the grid.
