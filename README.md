@@ -173,14 +173,14 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 
 ## Implicit grid
 
-1. If you don't specify any breakpoint at all, it'll assume the given number for all screen sizes, for example `cols-2
+- If you don't specify any breakpoint at all, it'll assume the given number for all screen sizes, for example `cols-2
 ` means 2 columns all the time.
-2. If you include a class without a breakpoint and another which does have one, the first one will apply for any screen
+- If you include a class without a breakpoint and another which does have one, the first one will apply for any screen
  size below the other. For example if `cols-2 cols-6-lg`, the grid will have 2 columns until
   1280px and then 6 columns starting from that resolution. If there were more breakpoints present it'll continue as
    normal, meaning that `cols-2 cols-6-lg cols-8-xl` should result in 2 columns until 1280px, 6 columns from that
     point, and 8 columns from 1440px and beyond.
-3. Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1
+- Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1
  column/row until the first given breakpoint. For example, using `cols-6-lg` alone will result in 1 column
   until 1280px and then it will start having 6 columns. If you want to define a number of columns/rows below *sm
   *, you should do it this way: `cols-2 cols-3-sm`.
