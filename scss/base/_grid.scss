@@ -1,4 +1,4 @@
-.grid {
+.grid, .inline-grid {
     display: grid;
 
     @for $i from 2 through 12 {
