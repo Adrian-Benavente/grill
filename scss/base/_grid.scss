@@ -62,27 +62,51 @@
         }
     }
 
-    @each $prop in (column, row, dense) {
-        &.auto-flow-#{$prop} {
-            grid-auto-flow: $prop;
+    @each $value in (column, row, dense) {
+        &.auto-flow-#{$value} {
+            grid-auto-flow: $value;
         }
     }
 
-    @each $prop in (start, center, end) {
-        &.align-items-#{$prop} {
-            align-items: $prop;
+    @each $value in (start, center, end) {
+        &.align-items-#{$value} {
+            align-items: $value;
         }
-        &.justify-items-#{$prop} {
-            justify-items: $prop;
+        &.justify-items-#{$value} {
+            justify-items: $value;
+        }
+        @each $value2 in (start, center, end) {
+            &.place-items-#{$value} {
+                place-items: $value $value2;
+            }
         }
     }
 
-    @each $prop in (start, center, end) {
-        .align-self-#{$prop} {
-            align-self: $prop;
+    @each $value in (start, center, end) {
+        .align-self-#{$value} {
+            align-self: $value;
         }
-        .justify-self-#{$prop} {
-            justify-self: $prop;
+        .justify-self-#{$value} {
+            justify-self: $value;
+        }
+        @each $value2 in (start, center, end) {
+            &.place-self-#{$value} {
+                place-self: $value $value2;
+            }
+        }
+    }
+
+    @each $value in (start, center, end, space-around, space-between, space-evenly) {
+        &.align-content-#{$value} {
+            align-content: $value;
+        }
+        &.justify-content-#{$value} {
+            justify-content: $value;
+        }
+        @each $value2 in (start, center, end) {
+            &.place-content-#{$value} {
+                place-content: $value $value2;
+            }
         }
     }
 
