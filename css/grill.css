@@ -1503,9 +1503,6 @@
 .grid.place-content-space-evenly, .inline-grid.place-content-space-evenly {
   place-content: space-evenly end;
 }
-.grid.bordered > *, .inline-grid.bordered > * {
-  border: 1px dashed black;
-}
 
 .w-full {
   width: 100%;
