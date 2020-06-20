@@ -1209,6 +1209,34 @@
     grid-row: span 12;
   }
 }
+.grid.gap-0-1 {
+  grid-gap: 0rem 1rem;
+  gap: 0rem 1rem;
+}
+.grid.gap-0-2 {
+  grid-gap: 0rem 2rem;
+  gap: 0rem 2rem;
+}
+.grid.gap-0-3 {
+  grid-gap: 0rem 3rem;
+  gap: 0rem 3rem;
+}
+.grid.gap-0-4 {
+  grid-gap: 0rem 4rem;
+  gap: 0rem 4rem;
+}
+.grid.gap-0-5 {
+  grid-gap: 0rem 5rem;
+  gap: 0rem 5rem;
+}
+.grid.gap-0 {
+  grid-gap: 0rem;
+  gap: 0rem;
+}
+.grid.gap-1-0 {
+  grid-gap: 1rem 0rem;
+  gap: 1rem 0rem;
+}
 .grid.gap-1-2 {
   grid-gap: 1rem 2rem;
   gap: 1rem 2rem;
@@ -1228,6 +1256,10 @@
 .grid.gap-1 {
   grid-gap: 1rem;
   gap: 1rem;
+}
+.grid.gap-2-0 {
+  grid-gap: 2rem 0rem;
+  gap: 2rem 0rem;
 }
 .grid.gap-2-1 {
   grid-gap: 2rem 1rem;
@@ -1249,6 +1281,10 @@
   grid-gap: 2rem;
   gap: 2rem;
 }
+.grid.gap-3-0 {
+  grid-gap: 3rem 0rem;
+  gap: 3rem 0rem;
+}
 .grid.gap-3-1 {
   grid-gap: 3rem 1rem;
   gap: 3rem 1rem;
@@ -1269,6 +1305,10 @@
   grid-gap: 3rem;
   gap: 3rem;
 }
+.grid.gap-4-0 {
+  grid-gap: 4rem 0rem;
+  gap: 4rem 0rem;
+}
 .grid.gap-4-1 {
   grid-gap: 4rem 1rem;
   gap: 4rem 1rem;
@@ -1288,6 +1328,10 @@
 .grid.gap-4 {
   grid-gap: 4rem;
   gap: 4rem;
+}
+.grid.gap-5-0 {
+  grid-gap: 5rem 0rem;
+  gap: 5rem 0rem;
 }
 .grid.gap-5-1 {
   grid-gap: 5rem 1rem;

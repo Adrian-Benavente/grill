@@ -47,8 +47,8 @@
         }
     }
 
-    @for $i from 1 through 5 {
-        @for $j from 1 through 5 {
+    @for $i from 0 through 5 {
+        @for $j from 0 through 5 {
             @if $i != $j {
                 &.gap-#{$i}-#{$j} {
                     grid-gap: #{$i}rem #{$j}rem;
