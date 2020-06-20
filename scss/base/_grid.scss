@@ -1,3 +1,6 @@
+@use "../abstracts/mixins";
+@use "breakpoints";
+
 .grid {
     display: grid;
 }
@@ -28,8 +31,8 @@
         }
     }
 
-    @each $breakpoint, $value in $breakpoints {
-        @include screen-size($breakpoint) {
+    @each $breakpoint, $value in breakpoints.$breakpoints {
+        @include mixins.screen-size($breakpoint) {
             @for $i from 2 through 12 {
                 &.cols-#{$i}-#{$breakpoint} {
                     grid-template-columns: repeat($i, 1fr);
@@ -114,10 +117,6 @@
                 place-content: $value $value2;
             }
         }
-    }
-
-    &.bordered > * {
-        border: 1px dashed black;
     }
 }
 

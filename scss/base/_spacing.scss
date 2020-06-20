@@ -1,3 +1,6 @@
+@use "../abstracts/mixins";
+@use "breakpoints";
+
 .m-auto {
     margin: auto;
 }
@@ -62,9 +65,9 @@
     }
 }
 
-@each $breakpoint, $value in $breakpoints {
+@each $breakpoint, $value in breakpoints.$breakpoints {
     // Explicit breakpoints
-    @include screen-size($breakpoint) {
+    @include mixins.screen-size($breakpoint) {
         .m-auto-#{$breakpoint} {
             margin: auto;
         }
