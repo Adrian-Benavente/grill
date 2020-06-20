@@ -56,6 +56,9 @@
                 }
             }
         }
+    }
+
+    @for $i from 1 through 5 {
         &.gap-#{$i} {
             grid-gap: #{$i}rem;
             gap: #{$i}rem;

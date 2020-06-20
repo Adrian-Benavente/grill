@@ -1229,10 +1229,6 @@
   grid-gap: 0rem 5rem;
   gap: 0rem 5rem;
 }
-.grid.gap-0 {
-  grid-gap: 0rem;
-  gap: 0rem;
-}
 .grid.gap-1-0 {
   grid-gap: 1rem 0rem;
   gap: 1rem 0rem;
@@ -1252,10 +1248,6 @@
 .grid.gap-1-5 {
   grid-gap: 1rem 5rem;
   gap: 1rem 5rem;
-}
-.grid.gap-1 {
-  grid-gap: 1rem;
-  gap: 1rem;
 }
 .grid.gap-2-0 {
   grid-gap: 2rem 0rem;
@@ -1277,10 +1269,6 @@
   grid-gap: 2rem 5rem;
   gap: 2rem 5rem;
 }
-.grid.gap-2 {
-  grid-gap: 2rem;
-  gap: 2rem;
-}
 .grid.gap-3-0 {
   grid-gap: 3rem 0rem;
   gap: 3rem 0rem;
@@ -1300,10 +1288,6 @@
 .grid.gap-3-5 {
   grid-gap: 3rem 5rem;
   gap: 3rem 5rem;
-}
-.grid.gap-3 {
-  grid-gap: 3rem;
-  gap: 3rem;
 }
 .grid.gap-4-0 {
   grid-gap: 4rem 0rem;
@@ -1325,10 +1309,6 @@
   grid-gap: 4rem 5rem;
   gap: 4rem 5rem;
 }
-.grid.gap-4 {
-  grid-gap: 4rem;
-  gap: 4rem;
-}
 .grid.gap-5-0 {
   grid-gap: 5rem 0rem;
   gap: 5rem 0rem;
@@ -1348,6 +1328,22 @@
 .grid.gap-5-4 {
   grid-gap: 5rem 4rem;
   gap: 5rem 4rem;
+}
+.grid.gap-1 {
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+.grid.gap-2 {
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+.grid.gap-3 {
+  grid-gap: 3rem;
+  gap: 3rem;
+}
+.grid.gap-4 {
+  grid-gap: 4rem;
+  gap: 4rem;
 }
 .grid.gap-5 {
   grid-gap: 5rem;

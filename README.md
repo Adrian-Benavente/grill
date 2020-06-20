@@ -2,8 +2,9 @@
 
 ![Grill Logo](logo/logo_transparent-small.png)
 
-Grill is not another bootstrap, but a **mobile first**, **CSS-only** library based on Grid Layout and written in Sass, intended for quickly making layouts.
-Many CSS frameworks out there do too much, my main goal is to keep it stripped down to the minimum possible. 
+Grill is not another bootstrap, but a **mobile first**, **CSS-only** library based on Grid Layout and written in Sass,
+intended for quickly making layouts. Many CSS frameworks out there do too much, my main goal is to keep it stripped down
+ to the minimum possible. 
 
 ## Table of Contents
 
@@ -50,9 +51,10 @@ CSS Grid is a huge, very powerful module. Due to the limitations of relying excl
 <div class="grid rows-8-sm rows-6-md rows-4-lg rows-2-xl"></div>
 ```
 
-- **gap**: The grid gutter, in `rem` units, from 1 to 5. If only one value is present, it'll apply to both sides (column
- and rows). You can use different values for both columns and rows in which case the first one will belong to
- column gap, and the second one to row gap. 
+- **gap**: The grid gutter, in `rem` units, from 1 to 5 in the symmetrical mode (`gap-n`), or 0 to 5 in the independent
+ mode (`gap-n-n`); notice that `gap-0-0` is not valid in this mode. If only one value is present, it'll apply to both
+ sides (column and rows). You can use different values for both columns and rows in which case the first one will belong
+ to column gap, and the second one to row gap. 
  
 ``` html
 <div class="grid cols-2-sm cols-4-md gap-3-1"></div>
@@ -67,15 +69,17 @@ _Notice that you cannot use the same value for both axis in this mode, ie: `gap-
 <div class="grid cols-2-sm cols-4-md grid-flow-column"></div>
 ```
 
-- **auto-cols**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take columns that are added
- implicitly. For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns).
+- **auto-cols**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take columns
+ that are added implicitly.
+ For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns).
 
 ``` html
 <div class="grid cols-2-sm grid-flow-row auto-cols-3"></div>
 ```
 
 - **auto-rows**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take rows
- that are added implicitly. For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows).
+ that are added implicitly.
+ For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows).
 
 ``` html
 <div class="grid cols-2-sm grid-flow-column auto-rows-3"></div>
@@ -112,12 +116,14 @@ or simply:
 - **align-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned
  in the vertical axis.
 
-- **justify-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned in the horizontal axis.
+- **justify-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned
+ in the horizontal axis.
 
 - **align-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the
  vertical axis.
 
-- **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the horizontal axis.
+- **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the
+ horizontal axis.
 
 ## Helpers
 
@@ -198,6 +204,7 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 
 ## Donation
 
-Did Grill save your day? I'd be thankful if you [buy me a coffee](https://www.buymeacoffee.com/fena). If you can
-'t, a star would motivate me. You also find me in [Patreon](https://patreon.com/fenavente) and [Paypal](https://paypal.me/adrianbenavente). In case you
-'re in Argentina and use **Mercado Pago**, you can buy me a coffee via [Cafecito](https://cafecito.app/fena).
+Did Grill save your day? I'd be thankful if you [buy me a coffee](https://www.buymeacoffee.com/fena). If you can't, a
+ star would motivate me.
+You also find me in [Patreon](https://patreon.com/fenavente) and [Paypal](https://paypal.me/adrianbenavente).
+In case you're in Argentina and use **Mercado Pago**, you can buy me a coffee via [Cafecito](https://cafecito.app/fena).
