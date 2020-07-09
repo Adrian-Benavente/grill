@@ -113,14 +113,14 @@ or, for all screen sizes:
 <div class="rowspan-6"></div>
 ```
 
-*Warning:* At the time of writing this, subgrid is only supported by Firefox. You may want to check if it's been adopted
-by other browsers before using them: https://caniuse.com/#search=subgrid. 
-
 - **subgrid-cols**: if applied to a grid child, it will inherit the column template from the outer grid.
 
 - **subgrid-rows**: if applied to a grid child, it will inherit the row template from the outer grid.
 
 - **subgrid**: if applied to a grid child, it will inherit both column and row templates from the outer grid.
+
+*Warning:* At the time of writing this, subgrid is only supported by Firefox. You may want to check if it's been adopted
+by other browsers before using them: https://caniuse.com/#search=subgrid. 
 
 
 ### Alignment
