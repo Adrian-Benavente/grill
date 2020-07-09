@@ -54,7 +54,7 @@ CSS Grid is a huge, very powerful module. Due to the limitations of relying excl
 ```
 
 - **gap**: The grid gutter, in `rem` units, from 1 to 5. If only one value is present, it'll apply to both sides (column
- and rows). You can use different values for both columns and rows in which case the first one will belong to
+ and rows). You can use different values for both columns and rows in which case the first one will apply to
  column gap, and the second one to row gap. 
  
 ``` html
@@ -116,11 +116,11 @@ or simply:
 *Warning:* At the time of writing this, subgrid is only supported by Firefox. You may want to check if it's been adopted
 by other browsers before using them: https://caniuse.com/#search=subgrid. 
 
-- **subgrid-cols**: when applied to a grid child, it will inherit the column template from the outer grid.
+- **subgrid-cols**: if applied to a grid child, it will inherit the column template from the outer grid.
 
-- **subgrid-rows**: when applied to a grid child, it will inherit the row template from the outer grid.
+- **subgrid-rows**: if applied to a grid child, it will inherit the row template from the outer grid.
 
-- **subgrid**: when applied to a grid child, it will inherit both column and row templates from the outer grid.
+- **subgrid**: if applied to a grid child, it will inherit both column and row templates from the outer grid.
 
 
 ### Alignment
@@ -169,33 +169,33 @@ both axes; `stretch` is the default value if you skip this class.
 
 All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in *rem* units.
 
-- **m-**: Margin from 1 to 5 (all axis).
+- **m**: Margin from 1 to 5 (all axis).
 
-- **mx-**: Margin from 1 to 5 (horizontal axis).
+- **mx**: Margin from 1 to 5 (horizontal axis).
 
-- **my-**: Margin from 1 to 5 (vertical axis).
+- **my**: Margin from 1 to 5 (vertical axis).
 
-- **mt-**: Margin top from 1 to 5
+- **mt**: Margin top from 1 to 5
 
-- **mb-**: Margin bottom from 1 to 5
+- **mb**: Margin bottom from 1 to 5
 
-- **ml-**: Margin left from 1 to 5
+- **ml**: Margin left from 1 to 5
 
-- **mr-**: Margin right from 1 to 5
+- **mr**: Margin right from 1 to 5
 
-- **p-**: Padding from 1 to 5 (all axis)
+- **p**: Padding from 1 to 5 (all axis)
 
-- **px-**: Padding from 1 to 5 (horizontal axis)
+- **px**: Padding from 1 to 5 (horizontal axis)
 
-- **py-**: Padding from 1 to 5 (vertical axis)
+- **py**: Padding from 1 to 5 (vertical axis)
 
-- **pt-**: Padding top from 1 to 5
+- **pt**: Padding top from 1 to 5
 
-- **pb-**: Padding bottom from 1 to 5
+- **pb**: Padding bottom from 1 to 5
 
-- **pl-**: Padding left from 1 to 5
+- **pl**: Padding left from 1 to 5
 
-- **pr-**: Padding right from 1 to 5
+- **pr**: Padding right from 1 to 5
 
 ### Text alignment
 
@@ -210,15 +210,15 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 
 ## Breakpoints
 
-- **-sm**: Starting from 600px
+- **sm**: Starting from 600px
 
-- **-md**: Starting from 960px
+- **md**: Starting from 960px
 
-- **-lg**: Starting from 1280px
+- **lg**: Starting from 1280px
 
-- **-xl**: Starting from 1440px
+- **xl**: Starting from 1440px
 
-- **-xxl**: Starting from 1920px
+- **xxl**: Starting from 1920px
 
 ## Implicit grid
 
@@ -229,7 +229,7 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
   1280px and then 6 columns starting from that resolution. If there were more breakpoints present it'll continue as
    normal, meaning that `cols-2 cols-6-lg cols-8-xl` should result in 2 columns until 1280px, 6 columns from that
     point, and 8 columns from 1440px and beyond.
-- Because the default number of columns and rows is 1, if you only use the breakpoint declarations it'll assume 1
+- Because the default number of columns and rows is 1, if you only use don't specify any breakpoint it'll assume 1
  column/row until the first given breakpoint. For example, using `cols-6-lg` alone will result in 1 column
   until 1280px and then it will start having 6 columns. If you want to define a number of columns/rows below *sm
   *, you should do it this way: `cols-2 cols-3-sm`.
