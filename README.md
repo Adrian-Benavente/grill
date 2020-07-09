@@ -94,7 +94,7 @@ For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/g
 <div class="colspan-4-md colspan-6-lg"></div>
 ```
 
-or simply:
+or, for all screen sizes:
 
 ``` html
 <div class="colspan-6"></div>
@@ -107,7 +107,7 @@ or simply:
 <div class="rowspan-4-md rowspan-6-lg"></div>
 ```
 
-or simply:
+or, for all screen sizes:
 
 ``` html
 <div class="rowspan-6"></div>
