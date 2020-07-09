@@ -1,7 +1,9 @@
+@use "breakpoints";
+
 /// @param {string} $size - one of the following: "sm", "md", "lg", "xl" or "xxl"
 
 @mixin screen-size($size) {
-    @each $breakpoint, $value in $breakpoints {
+    @each $breakpoint, $value in breakpoints.$breakpoints {
         @if $size == $breakpoint {
             @media (min-width: $value) {
                 @content;

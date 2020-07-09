@@ -2,9 +2,9 @@
 
 ![Grill Logo](logo/logo_transparent-small.png)
 
-Grill is not another bootstrap, but a **mobile first**, **CSS-only** library based on Grid Layout and written in Sass,
-intended for quickly making layouts. Many CSS frameworks out there do too much, my main goal is to keep it stripped down
- to the minimum possible. 
+Grill is not another bootstrap, but a **mobile first**, **CSS-only** library based on Grid Layout and written in Sass, 
+intended for quickly making layouts. Many CSS frameworks out there do too much, my main goal is to keep it stripped down 
+to the minimum possible. 
 
 ## Table of Contents
 
@@ -34,7 +34,9 @@ CSS Grid is a huge, very powerful module. Due to the limitations of relying excl
 
 ### Container
 
-- **grid**: Tells an HTML element to become a grid container.
+- **grid**: Defines and element as a grid container.
+
+- **inline-grid**: Defines an element as an inline grid container.
 
 - **cols**: From 2 to 12 (1 is the default), defines how many columns the grid will have. You
  can also add the breakpoint from which it will start having that number of columns. For example:
@@ -51,10 +53,9 @@ CSS Grid is a huge, very powerful module. Due to the limitations of relying excl
 <div class="grid rows-8-sm rows-6-md rows-4-lg rows-2-xl"></div>
 ```
 
-- **gap**: The grid gutter, in `rem` units, from 1 to 5 in the symmetrical mode (`gap-n`), or 0 to 5 in the independent
- mode (`gap-n-n`); notice that `gap-0-0` is not valid in this mode. If only one value is present, it'll apply to both
- sides (column and rows). You can use different values for both columns and rows in which case the first one will belong
- to column gap, and the second one to row gap. 
+- **gap**: The grid gutter, in `rem` units, from 1 to 5. If only one value is present, it'll apply to both sides (column
+ and rows). You can use different values for both columns and rows in which case the first one will belong to
+ column gap, and the second one to row gap. 
  
 ``` html
 <div class="grid cols-2-sm cols-4-md gap-3-1"></div>
@@ -69,17 +70,16 @@ _Notice that you cannot use the same value for both axis in this mode, ie: `gap-
 <div class="grid cols-2-sm cols-4-md grid-flow-column"></div>
 ```
 
-- **auto-cols**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take columns
- that are added implicitly.
- For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns).
+- **auto-cols**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take columns 
+that are added implicitly. 
+For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-columns).
 
 ``` html
 <div class="grid cols-2-sm grid-flow-row auto-cols-3"></div>
 ```
 
 - **auto-rows**: From 2 to 12 (1 is the default). It defines how many portions of the remaining space will take rows
- that are added implicitly.
- For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows).
+ that are added implicitly. For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows).
 
 ``` html
 <div class="grid cols-2-sm grid-flow-column auto-rows-3"></div>
@@ -113,17 +113,49 @@ or simply:
 <div class="rowspan-6"></div>
 ```
 
-- **align-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned
- in the vertical axis.
+*Warning:* At the time of writing this, subgrid is only supported by Firefox. You may want to check if it's been adopted
+by other browsers before using them: https://caniuse.com/#search=subgrid. 
 
-- **justify-items**: `-stretch`, `-start`, `-center` or `-end`, specifies how elements within the grid will be aligned
- in the horizontal axis.
+- **subgrid-cols**: when applied to a grid child, it will inherit the column template from the outer grid.
 
-- **align-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the
- vertical axis.
+- **subgrid-rows**: when applied to a grid child, it will inherit the row template from the outer grid.
 
-- **justify-self**: `-stretch`, `-start`, `-center` or `-end`, specifies how a child element will be aligned in the
- horizontal axis.
+- **subgrid**: when applied to a grid child, it will inherit both column and row templates from the outer grid.
+
+
+### Alignment
+
+When we say "block" and "inline" axes, we're referring to the vertical and horizontal axes respectively, according to
+the [Box Alignment Specification](https://drafts.csswg.org/css-align/). 
+
+- **align-items**: `-start`, `-center` or `-end`, specifies how the elements inside the grid cells will be aligned
+ in the block axis; `stretch` is the default value if you skip this class.
+
+- **justify-items**: `-start`, `-center` or `-end`, specifies how the elements inside the grid cells will be 
+aligned in the inline axis; `stretch` is the default value if you skip this class.
+
+- **place-items**: `-start`, `-center` or `-end`, specifies how the elements inside the grid cells will be aligned 
+in both axes; `stretch` is the default value if you skip this class.
+
+- **align-content**: `-start`, `-center`, `-end`, `space-around`, `space-between` or `space-evenly` specifies how the 
+content inside the grid will be aligned  in the block axis; `stretch` is the default value if you skip this class.
+
+- **justify-content**: `-start`, `-center`, `-end`, `space-around`, `space-between` or `space-evenly` specifies how the 
+content inside the grid will be aligned in the inline axis; `stretch` is the default value if you skip this class.
+
+- **place-content**: `-start`, `-center`, `-end`, `space-around`, `space-between` or `space-evenly` specifies how the 
+content inside the grid will be aligned in both axes; `stretch` is the default value if you skip 
+this class.
+
+- **align-self**: `-start`, `-center` or `-end`, specifies how a single element within a grid cell will be aligned in 
+the block axis; `stretch` is the default value if you skip this class.
+
+- **justify-self**: `-start`, `-center` or `-end`, specifies how a single element within a grid cell will be aligned in 
+the inline axis; `stretch` is the default value if you skip this class.
+
+- **place-self**: `-start`, `-center` or `-end`, specifies how a single element within a grid cell will be aligned in 
+both axes; `stretch` is the default value if you skip this class.
+
 
 ## Helpers
 
@@ -204,7 +236,7 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 
 ## Donation
 
-Did Grill save your day? I'd be thankful if you [buy me a coffee](https://www.buymeacoffee.com/fena). If you can't, a
- star would motivate me.
-You also find me in [Patreon](https://patreon.com/fenavente) and [Paypal](https://paypal.me/adrianbenavente).
-In case you're in Argentina and use **Mercado Pago**, you can buy me a coffee via [Cafecito](https://cafecito.app/fena).
+Did Grill save your day? I'd be thankful if you [buy me a coffee](https://www.buymeacoffee.com/fena). If you can
+'t, a star would motivate me. You also find me in [Patreon](https://patreon.com/fenavente) and 
+[Paypal](https://paypal.me/adrianbenavente). In case you're in Argentina and use **Mercado Pago**, you can buy me a 
+coffee via [Cafecito](https://cafecito.app/fena).

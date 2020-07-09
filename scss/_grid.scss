@@ -1,6 +1,15 @@
+@use "mixins";
+@use "breakpoints";
+
 .grid {
     display: grid;
+}
 
+.inline-grid {
+    display: inline-grid;
+}
+
+.grid, .inline-grid {
     @for $i from 2 through 12 {
         &.cols-#{$i} {
             grid-template-columns: repeat($i, 1fr);
@@ -22,8 +31,8 @@
         }
     }
 
-    @each $breakpoint, $value in $breakpoints {
-        @include screen-size($breakpoint) {
+    @each $breakpoint, $value in breakpoints.$breakpoints {
+        @include mixins.screen-size($breakpoint) {
             @for $i from 2 through 12 {
                 &.cols-#{$i}-#{$breakpoint} {
                     grid-template-columns: repeat($i, 1fr);
@@ -65,32 +74,62 @@
         }
     }
 
-    @each $prop in (column, row, dense) {
-        &.auto-flow-#{$prop} {
-            grid-auto-flow: $prop;
+    @each $prop-value in (column, row, dense) {
+        &.auto-flow-#{$prop-value} {
+            grid-auto-flow: $prop-value;
         }
     }
 
-    @each $prop in (start, center, end) {
-        &.align-items-#{$prop} {
-            align-items: $prop;
+    @each $prop-value in (start, center, end, space-around, space-between, space-evenly) {
+        &.align-content-#{$prop-value} {
+            align-content: $prop-value;
         }
-        &.justify-items-#{$prop} {
-            justify-items: $prop;
+        &.justify-content-#{$prop-value} {
+            justify-content: $prop-value;
         }
-    }
-
-    @each $prop in (start, center, end) {
-        .align-self-#{$prop} {
-            align-self: $prop;
-        }
-        .justify-self-#{$prop} {
-            justify-self: $prop;
+        &.place-content-#{$prop-value} {
+            place-content: $prop-value;
         }
     }
 
-    &.bordered > * {
-        border: 1px dashed black;
+    @each $prop-value in (start, center, end) {
+        &.align-items-#{$prop-value} {
+            align-items: $prop-value;
+        }
+        &.justify-items-#{$prop-value} {
+            justify-items: $prop-value;
+        }
+        &.place-items-#{$prop-value} {
+            place-items: $prop-value;
+        }
+    }
+
+    @each $prop-value in (start, center, end) {
+        .align-self-#{$prop-value} {
+            align-self: $prop-value;
+        }
+        .justify-self-#{$prop-value} {
+            justify-self: $prop-value;
+        }
+        .place-self-#{$prop-value} {
+            place-self: $prop-value;
+        }
+    }
+
+    .subgrid {
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+    }
+
+    .subgrid-cols {
+        display: grid;
+        grid-template-columns: subgrid;
+    }
+
+    .subgrid-rows {
+        display: grid;
+        grid-template-rows: subgrid;
     }
 }
 
