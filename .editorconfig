@@ -1,0 +1,20 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+max_line_length = 120
+
+[*.{js,php,html,scss}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+[*.{css,scss,html}]
+quote_type = double
+
+[*.{js,php}]
+quote_type = single
+
+[Makefile]
+indent_style = tab

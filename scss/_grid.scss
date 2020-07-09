@@ -1,4 +1,4 @@
-@use "../abstracts/mixins";
+@use "mixins";
 @use "breakpoints";
 
 .grid {
@@ -71,52 +71,62 @@
         }
     }
 
-    @each $value in (column, row, dense) {
-        &.auto-flow-#{$value} {
-            grid-auto-flow: $value;
+    @each $prop-value in (column, row, dense) {
+        &.auto-flow-#{$prop-value} {
+            grid-auto-flow: $prop-value;
         }
     }
 
-    @each $value in (start, center, end) {
-        &.align-items-#{$value} {
-            align-items: $value;
+    @each $prop-value in (start, center, end, space-around, space-between, space-evenly) {
+        &.align-content-#{$prop-value} {
+            align-content: $prop-value;
         }
-        &.justify-items-#{$value} {
-            justify-items: $value;
+        &.justify-content-#{$prop-value} {
+            justify-content: $prop-value;
         }
-        @each $value2 in (start, center, end) {
-            &.place-items-#{$value} {
-                place-items: $value $value2;
-            }
+        &.place-content-#{$prop-value} {
+            place-content: $prop-value;
         }
     }
 
-    @each $value in (start, center, end) {
-        .align-self-#{$value} {
-            align-self: $value;
+    @each $prop-value in (start, center, end) {
+        &.align-items-#{$prop-value} {
+            align-items: $prop-value;
         }
-        .justify-self-#{$value} {
-            justify-self: $value;
+        &.justify-items-#{$prop-value} {
+            justify-items: $prop-value;
         }
-        @each $value2 in (start, center, end) {
-            &.place-self-#{$value} {
-                place-self: $value $value2;
-            }
+        &.place-items-#{$prop-value} {
+            place-items: $prop-value;
         }
     }
 
-    @each $value in (start, center, end, space-around, space-between, space-evenly) {
-        &.align-content-#{$value} {
-            align-content: $value;
+    @each $prop-value in (start, center, end) {
+        .align-self-#{$prop-value} {
+            align-self: $prop-value;
         }
-        &.justify-content-#{$value} {
-            justify-content: $value;
+        .justify-self-#{$prop-value} {
+            justify-self: $prop-value;
         }
-        @each $value2 in (start, center, end) {
-            &.place-content-#{$value} {
-                place-content: $value $value2;
-            }
+        .place-self-#{$prop-value} {
+            place-self: $prop-value;
         }
+    }
+
+    .subgrid {
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-template-rows: subgrid;
+    }
+
+    .subgrid-cols {
+        display: grid;
+        grid-template-columns: subgrid;
+    }
+
+    .subgrid-rows {
+        display: grid;
+        grid-template-rows: subgrid;
     }
 }
 
