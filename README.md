@@ -87,7 +87,7 @@ For more info, see [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/g
 
 ### Children
 
-- **colspan**: used in any direct child of the grid container, indicates how many columns it shall span. It also accepts
+- **colspan**: used in any direct child of the grid container, indicates how many columns it will span. It also accepts
  breakpoints.
 
 ``` html
@@ -100,7 +100,7 @@ or, for all screen sizes:
 <div class="colspan-6"></div>
 ```
 
-- **rowspan**: used in any direct child of the grid container, indicates how many rows it shall span. It also accepts
+- **rowspan**: used in any direct child of the grid container, indicates how many rows it will span. It also accepts
  breakpoints.
 
 ``` html
