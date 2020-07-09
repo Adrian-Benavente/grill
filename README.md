@@ -119,7 +119,7 @@ or, for all screen sizes:
 
 - **subgrid**: if applied to a grid child, it will inherit both column and row templates from the outer grid.
 
-*Warning:* At the time of writing this, subgrid is only supported by Firefox. You may want to check if it's been adopted
+**Warning:** At the time of writing this, subgrid is only supported by Firefox. You may want to check if it's been adopted
 by other browsers before using them: https://caniuse.com/#search=subgrid. 
 
 
