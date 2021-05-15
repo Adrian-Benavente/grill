@@ -231,7 +231,7 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
   1280px and then 6 columns starting from that resolution. If there were more breakpoints present it'll continue as
    normal, meaning that `cols-2 cols-6-lg cols-8-xl` should result in 2 columns until 1280px, 6 columns from that
     point, and 8 columns from 1440px and beyond.
-- Because the default number of columns and rows is 1, if you only use don't specify any breakpoint it'll assume 1
+- Because the default number of columns and rows is 1, if you don't specify any breakpoint it'll assume 1
  column/row until the first given breakpoint. For example, using `cols-6-lg` alone will result in 1 column
   until 1280px and then it will start having 6 columns. If you want to define a number of columns/rows below *sm
   *, you should do it this way: `cols-2 cols-3-sm`.
