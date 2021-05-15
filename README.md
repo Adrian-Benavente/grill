@@ -139,14 +139,14 @@ aligned in the inline axis; `stretch` is the default value if you skip this clas
 in both axes; `stretch` is the default value if you skip this class.
 
 - **align-content**: `-start`, `-center`, `-end`, `-space-around`, `-space-between` or `-space-evenly` specifies how 
-  the content inside the grid will be aligned  in the block axis; `stretch` is the default value if you skip this class.
+  the content inside the grid will be aligned  in the block axis; `-stretch` is the default value if you skip this 
+  class.
 
 - **justify-content**: `-start`, `-center`, `-end`, `-space-around`, `-space-between` or `-space-evenly` specifies how 
   the content inside the grid will be aligned in the inline axis; `stretch` is the default value if you skip this class.
 
 - **place-content**: `-start`, `-center`, `-end`, `-space-around`, `-space-between` or `-space-evenly` specifies how 
-  the content inside the grid will be aligned in both axes; `stretch` is the default value if you skip 
-this class.
+  the content inside the grid will be aligned in both axes; `-stretch` is the default value if you skip this class.
 
 - **align-self**: `-start`, `-center` or `-end`, specifies how a single element within a grid cell will be aligned in 
 the block axis; `stretch` is the default value if you skip this class.
