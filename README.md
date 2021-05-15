@@ -130,7 +130,7 @@ When we say "block" and "inline" axes, we're referring to the vertical and horiz
 the [Box Alignment Specification](https://drafts.csswg.org/css-align/). 
 
 - **align-items**: `-start`, `-center` or `-end`, specifies how the elements inside the grid cells will be aligned
- in the block axis; `stretch` is the default value if you skip this class.
+ in the block axis; `-stretch` is the default value if you skip this class.
 
 - **justify-items**: `-start`, `-center` or `-end`, specifies how the elements inside the grid cells will be 
 aligned in the inline axis; `stretch` is the default value if you skip this class.
@@ -201,9 +201,9 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 
 ### Text alignment
 
-- **text-start**: Aligns text to the start in your native reading orientation.
+- **text-start**: Aligns text to the start according to your native reading orientation.
 - **text-center**: Aligns text to the center.
-- **text-end**: Aligns text to the start in your native reading orientation.
+- **text-end**: Aligns text to the end according to your native reading orientation.
 
 ### Accessibility
 
