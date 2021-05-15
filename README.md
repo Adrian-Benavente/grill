@@ -225,7 +225,7 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 ## Implicit grid
 
 - If you don't specify any breakpoint at all, it'll assume the given number for all screen sizes, for example `cols-2
-` means 2 columns all the time.
+` means 2 columns on any screen size.
 - If you include a class without a breakpoint and another which does have one, the first one will apply for any screen
  size below the other. For example if `cols-2 cols-6-lg`, the grid will have 2 columns until
   1280px and then 6 columns starting from that resolution. If there were more breakpoints present it'll continue as
