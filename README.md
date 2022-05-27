@@ -239,4 +239,4 @@ All the following accept breakpoint suffix, ie: `mr-2-md`. Size measures are in 
 Did Grill save your day? I'd be thankful if you [buy me a coffee](https://www.buymeacoffee.com/fena). If you can
 't, a star would motivate me. You also find me on [Patreon](https://patreon.com/fenavente) and 
 [Paypal](https://paypal.me/adrianbenavente). In case you're in Argentina and use **Mercado Pago**, you can buy me a 
-coffee via [Cafecito](https://cafecito.app/fena).
+coffee through [Cafecito](https://cafecito.app/fena).
