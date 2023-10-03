@@ -24,7 +24,7 @@ class name on it and thus including its own columns declaration.
   
 ### Disclaimer
 
-CSS Grid is a huge, very powerful module into CSS. Due to the limitations of relying exclusively on classes, **Grill** 
+CSS Grid is a huge, very powerful module in CSS. Due to the limitations of relying exclusively on classes, **Grill** 
 isn't able to take advantage of Grid's full potential, but provides the necessary set of rules for the majority of the
   tasks you're going to face when it comes to making layouts. I suggest you to read [this very comprehensive article](https://css-tricks.com/snippets/css/complete-guide-grid/) 
 to better understand the true power and benefits of CSS Grid.
