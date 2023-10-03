@@ -2,9 +2,9 @@
 
 ![Grill Logo](logo/logo_transparent-small.png)
 
-Grill is not another bootstrap, but a **mobile first**, **CSS-only** library based on [Grid Layout](//www.w3.org/TR/css-grid-1/) 
+Grill is not another Bootstrap, but a **mobile first**, **CSS-only** library based on [Grid Layout](//www.w3.org/TR/css-grid-1/) 
 and written in [Sass](//sass-lang.com/), intended for quickly making layouts. Many CSS frameworks out there do too 
-much, my main goal is to keep it stripped down to the minimum necessary. 
+much, my main goal is to keep it stripped down to the minimum as possible. 
 
 ## Table of Contents
 
