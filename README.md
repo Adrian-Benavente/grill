@@ -18,7 +18,7 @@ much, my main goal is to keep it stripped down to the minimum as possible.
 ## Usage
 
 Because of the way grid works, you don't need two levels of html containers, one to declare a row and then another to
- declare the columns. In Grill, you declare the number of columns (template) directly on the top-level container. 
+ declare the columns. With Grill, you declare the number of columns (template) directly on the top-level container. 
 Nevertheless, since grids can be nested, any child of a grid container can also be a grid itself, having the `grid` 
 class name on it and thus including its own columns declaration. 
   
